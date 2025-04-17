@@ -1,0 +1,235 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+:root {
+  --primary-purple-light: #9b1de2;
+  --primary-purple-dark: #5e0a77;
+  --primary-purple-lighter: #c38fff;
+  --light-gray: #f5f8ff;
+  --box-shadow-default: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --border-radius-xl: 1rem;
+}
+
+.primary-gradient-to-bottom {
+  background: linear-gradient(0,#5e0a77, #9b1de2, #c38fff);
+  color: #fff;
+}
+
+.footer-bg{
+  background: linear-gradient(0,#9b1de2, #c38fff);
+  color: #fff;
+}
+
+.footer-copyright{
+  background-color: var(--primary-purple-dark);
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+}
+
+.expertise-flash-gradient-bg{
+  background: linear-gradient(
+    181deg,
+    /* rgba(45, 0, 52, 1) 0%, */
+    /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
+    /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
+    /* Electric Purple */ rgba(195, 143, 255, 0.5) 100% /* Shiny Lavender */
+  );
+}
+
+.hero-gradient-bg {
+  background: linear-gradient(
+    0deg,
+    /* rgba(45, 0, 52, 1) 0%, */
+    /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
+    /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
+    /* Electric Purple */ rgba(195, 143, 255, 0.5) 100% /* Shiny Lavender */
+  );
+}
+
+.carousel-bg-size {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-pcb {
+  background-image: url("../public/images/pcb.jpg");
+}
+
+.carousel-embedded {
+  background-image: url("../public/images/embedded-software.jpg");
+}
+
+.carousel-iot {
+  background-image: url("../public/images/iot.jpg");
+}
+
+.sub-heading {
+  color: var(--primary-purple-light);
+}
+
+.ai-tech-home-img{
+  height: 500px;
+  max-width: 100%;
+}
+
+.expertise-flash{
+  background-image: url("../public/images/expertise-flash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .bi {
+  width: 1em;
+  height: 1em;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 10rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 3rem 0;
+}
+
+.heading {
+  letter-spacing: -0.05rem;
+}
+
+.about-secondary-img {
+  height: 80vh;
+}
+
+.about-secondary-img img {
+  object-fit: cover;
+}
+
+.services {
+  background-color: var(--light-gray);
+}
+
+.home-ender{
+  background-image: url("../public/images/gray-abstract-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-content {
+  background-color: var(--primary-purple-light);
+  border-bottom-right-radius: var(--border-radius-xl);
+  border-bottom-left-radius: var(--border-radius-xl);
+  color: #fff;
+}
+
+.services-img-border {
+  border-top-right-radius: var(--border-radius-xl);
+  border-top-left-radius: var(--border-radius-xl);
+  height: 250px;
+}
+
+.footer-links{
+  color: #fff;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-secondary-img {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 62em) {
+  .heading {
+    margin-top: 7rem;
+  }
+}
