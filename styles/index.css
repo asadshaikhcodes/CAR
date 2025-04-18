@@ -48,6 +48,25 @@ main{
   );
 }
 
+.nav-bg{
+  background-color: var(--primary-purple-dark);
+}
+
+.nav-link-white{
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  background-color: #fff;
+}
+
+.nav-link:hover{
+  background-color: #fff;
+}
+
 .carousel-bg-size {
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,6 +88,10 @@ main{
   color: var(--primary-purple-light);
 }
 
+.sub-heading-white{
+  color: #fff;
+}
+
 .ai-tech-home-img{
   height: 500px;
   max-width: 100%;
@@ -82,88 +105,16 @@ main{
   color: #fff;
 }
 
-.b-example-divider {
-  width: 100%;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
-
-.bi {
-  vertical-align: -0.125em;
-  fill: currentColor;
-}
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.bd-mode-toggle {
-  z-index: 1500;
-}
-
-.bd-mode-toggle .bi {
-  width: 1em;
-  height: 1em;
-}
-
-.bd-mode-toggle .dropdown-menu .active .bi {
-  display: block !important;
-}
-
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
-}
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 10rem;
   z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
 }
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-/* Featurettes
-------------------------- */
 
 .featurette-divider {
   margin: 3rem 0;
@@ -204,6 +155,29 @@ body {
   border-top-left-radius: var(--border-radius-xl);
   height: 250px;
 }
+
+/* about */
+.about img{
+  height: 500px;
+  width: 100%;
+}
+
+
+.about-txt-overlay{
+  background: linear-gradient(
+    0deg,
+    /* rgba(45, 0, 52, 1) 0%, */
+    /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
+    /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
+    /* Electric Purple */ rgba(195, 143, 255, 0.7) 100% /* Shiny Lavender */
+  );
+  color: #fff;
+}
+.about-feature img{
+  height: 100px;
+  width: 100%;
+}
+/* about */
 
 .footer-links{
   color: #fff;
