@@ -9,31 +9,37 @@
   --border-radius-xl: 1rem;
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
 .primary-gradient-to-bottom {
-  background: linear-gradient(0,#5e0a77, #9b1de2, #c38fff);
+  background: linear-gradient(0, #5e0a77, #9b1de2, #c38fff);
   color: #fff;
 }
 
-.footer-bg{
-  background: linear-gradient(0,#9b1de2, #c38fff);
+.footer-bg {
+  background: linear-gradient(0, #9b1de2, #c38fff);
   color: #fff;
 }
 
-.footer-copyright{
+.footer-copyright {
   background-color: var(--primary-purple-dark);
 }
 
-main{
+main {
   width: 100%;
   height: 100vh;
 }
 
-.expertise-flash-gradient-bg{
+.expertise-flash-gradient-bg {
   background: linear-gradient(
     181deg,
-    /* rgba(45, 0, 52, 1) 0%, */
-    /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
-    /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
+    /* rgba(45, 0, 52, 1) 0%, */ /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
+      /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
     /* Electric Purple */ rgba(195, 143, 255, 0.5) 100% /* Shiny Lavender */
   );
 }
@@ -41,29 +47,29 @@ main{
 .hero-gradient-bg {
   background: linear-gradient(
     0deg,
-    /* rgba(45, 0, 52, 1) 0%, */
-    /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
-    /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
+    /* rgba(45, 0, 52, 1) 0%, */ /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
+      /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
     /* Electric Purple */ rgba(195, 143, 255, 0.5) 100% /* Shiny Lavender */
   );
 }
 
-.nav-bg{
+.nav-bg {
   background-color: var(--primary-purple-dark);
 }
 
-.nav-link-white{
+.nav-link-white {
   color: #fff;
   transition: all 0.3s ease;
   padding: 3px;
   border-radius: 3px;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
   background-color: #fff;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   background-color: #fff;
 }
 
@@ -88,16 +94,16 @@ main{
   color: var(--primary-purple-light);
 }
 
-.sub-heading-white{
+.sub-heading-white {
   color: #fff;
 }
 
-.ai-tech-home-img{
+.ai-tech-home-img {
   height: 500px;
   max-width: 100%;
 }
 
-.expertise-flash{
+.expertise-flash {
   background-image: url("../public/images/expertise-flash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,7 +142,7 @@ main{
   background-color: var(--light-gray);
 }
 
-.home-ender{
+.home-ender {
   background-image: url("../public/images/gray-abstract-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -157,33 +163,30 @@ main{
 }
 
 /* about */
-.about img{
+.about img {
   height: 500px;
   width: 100%;
 }
 
-
-.about-txt-overlay{
+.about-txt-overlay {
   background: linear-gradient(
     0deg,
-    /* rgba(45, 0, 52, 1) 0%, */
-    /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
-    /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
+    /* rgba(45, 0, 52, 1) 0%, */ /* Deep Violet  rgba(94, 10, 119, 0.95) 30%,*/
+      /* Vivid Purple */ rgba(155, 29, 226, 0.5) 70%,
     /* Electric Purple */ rgba(195, 143, 255, 0.7) 100% /* Shiny Lavender */
   );
   color: #fff;
 }
-.about-feature img{
+.about-feature img {
   height: 100px;
   width: 100%;
 }
 /* about */
 
-.footer-links{
+.footer-links {
   color: #fff;
 }
 
-/* rtl:end:remove */
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
