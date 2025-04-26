@@ -142,12 +142,58 @@
   color: var(--bs-primary);
 }
 
-.prod-key-highlight-section-icon{
-    width: 5rem;
-    height: 5rem;
+.prod-key-highlight-section-icon {
+  width: 5rem;
+  height: 5rem;
 }
 
 /* /product design development key highlights end */
+/* hardware design section */
+.hdw-feature-list li {
+  margin-bottom: 3rem;
+}
+
+.hdw-feature-list li img {
+  height: 250px;
+  width: 400px;
+}
+
+.hdw-key-card {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.hdw-key-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hdw-key-card-icon-wrapper {
+  background: #f9fafb;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learn-more-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #7c3aed; /* Purple color */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+}
+
+/* hardware design section end */
 
 /* ========================================
      RESPONSIVE ADJUSTMENTS
@@ -164,6 +210,10 @@
   }
   .prod-des-sect-title {
     font-size: 1.6rem;
+  }
+
+  .hdw-feature-list li {
+    margin-bottom: 1rem;
   }
 }
 
