@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoolBiz Hero Template</title>
+    <title>Caravel Systems Inc - Services</title>
 
     <!-- Bootstrap 5.3 CDN -->
     <link
@@ -12,44 +12,114 @@
     />
 
     <!-- Custom Styles -->
-    <link href="/styles/services.css" rel="stylesheet" />
+    <link href="/styles/index.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-light">
     <!-- Navbar for Large Screens -->
-    <nav
-      class="navbar navbar-dark bg-primary-blue sticky-nav px-3 d-none d-lg-flex"
-    >
-      <a class="navbar-brand" href="/">Caravel Systems Inc</a>
-      <ul class="navbar-nav flex-row">
-        <li class="nav-item mx-2">
-          <a class="nav-link text-white" href="/">Home</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link text-white" href="/about.html">About</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link text-white" href="#">Services</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link text-white" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Mobile Navbar Toggle -->
-    <nav class="navbar bg-primary-blue d-lg-none">
-      <div class="container-fluid justify-content-between">
-        <a class="navbar-brand text-white" href="/">Caravel Systems Inc</a>
-        <button
-          class="btn btn-outline-light"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#mobileMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg nav-bg"
+        aria-label="Offcanvas navbar large"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="/">
+            <img
+              src="./public/images/icons/caravel-logo.png"
+              alt="Caravel Systems Inc logo"
+              height="50px"
+              width="50px"
+            />
+            <span class="fw-bold nav-link-white ps-2">Caravel Systems Inc</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+                Caravel Systems Inc
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item mx-lg-2">
+                  <a
+                    class="nav-link active nav-link-white"
+                    aria-current="page"
+                    href="/"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item mx-lg-2">
+                  <a class="nav-link nav-link-white" href="/about.html"
+                    >ABOUT</a
+                  >
+                </li>
+                <li class="nav-item mx-lg-2 active">
+                  <a class="nav-link nav-link-white" href="/services.html"
+                    >SERVICES</a
+                  >
+                </li>
+                <li class="nav-item mx-lg-2 active">
+                  <a class="nav-link nav-link-white" href="/contact.html"
+                    >CONTACT</a
+                  >
+                </li>
+                <!-- <li class="nav-item dropdown nav-bg mx-lg-2">
+                  <a
+                    class="nav-link dropdown-toggle nav-link-white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    SERVICES
+                  </a>
+                  <ul class="dropdown-menu" style="width: 200px">
+                    <li>
+                      <a class="dropdown-item text-wrap" href="#"
+                        >PRODUCT DESIGN & DEVELOPMENT</a
+                      >
+                    </li>
+                    <hr class="dropdown-divider" />
+                    <li>
+                      <a class="dropdown-item text-wrap" href="#"
+                        >HARDWARE / BOARD DESIGN AND DEVELOPMENT</a
+                      >
+                    </li>
+                    <hr class="dropdown-divider" />
+                    <li>
+                      <a class="dropdown-item text-wrap" href="#"
+                        >EMBEDDED SOFTWARE DESIGN</a
+                      >
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero-section text-white">
@@ -75,11 +145,11 @@
               Full-spectrum design and development tailored for complex,
               mission-critical needs
             </p>
-            <a
+            <!-- <a
               href="#"
               class="btn bg-accent-blue text-white hover-bg-primary mt-3"
               >See More</a
-            >
+            > -->
           </div>
         </div>
       </div>
@@ -455,8 +525,68 @@
     </section>
 
     <!-- /product design & development end -->
+    <!-- services CTA -->
+    <section class="py-5 bg-white border-top border-bottom">
+      <div class="container text-center">
+        <h2 class="mb-4">Power Up Your Product</h2>
+        <p class="lead mb-4">
+          At Caravel Systems Inc, we don’t just deliver solutions — we drive
+          innovation. Whether you're launching something new or transforming
+          what's already in place, our expert team brings industry-spanning
+          experience and a commitment to excellence. From concept to execution,
+          we reimagine possibilities and engineer results that move you forward.
+        </p>
+        <div
+          class="btn-wrapper"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800"
+        >
+          <!-- First Button (Primary Theme) -->
+          <button class="cta-redirect-btn">
+            Lets Build Together
+            <span class="arrow-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793L10.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <!-- Second Button (Alternate Theme) -->
+          <button class="cta-scroll-btn">
+            See More
+            <span class="arrow-down">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 1 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 1 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /services CTA -->
     <!-- Hardware Design & Development section -->
-    <section class="bg-white border-bottom border-top py-5">
+    <section class="bg-light border-bottom border-top py-5">
       <div class="container">
         <div class="row justify-content-center text-center section-intro">
           <div class="col-12 col-md-9 col-lg-8 mb-5">
@@ -820,11 +950,770 @@
       <!--end of container-->
     </section>
     <!-- / Hardware design & Development section end -->
-    <!-- /featured services -->
+    <!-- services-CTA -->
+    <section class="py-5 bg-white border-bottom">
+      <div class="container text-center">
+        <h2 class="mb-4">Your Vision. Our Power.</h2>
+        <p class="lead mb-4">
+          Caravel Systems Inc powers your innovation with expert hardware,
+          embedded software, and PCB design solutions. From concept to
+          deployment, we deliver high-performance, reliable systems — fast,
+          collaborative, and built to last. Let’s bring your product to life.
+        </p>
+        <div
+          class="btn-wrapper"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800"
+        >
+          <!-- First Button (Primary Theme) -->
+          <button class="cta-redirect-btn" onclick="scrollToContact()">
+            Get A Custom Solution
+            <span class="arrow-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793L10.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </span>
+          </button>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS -->
+          <!-- Second Button (Alternate Theme) -->
+          <button class="cta-scroll-btn">
+            See More
+            <span class="arrow-down">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 1 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 1 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--/services CTA -->
+    <!-- pcb section -->
+    <section class="container py-5">
+      <div class="row">
+        <!-- Left Column: Creative Heading and Description -->
+        <div class="col-md-6 mb-4">
+          <div
+            class="w-100 h-100 d-flex justify-content-center align-items-center"
+          >
+            <div class="px-lg-3">
+              <h2 class="display-4 fw-bold text-primary">
+                PCB Design Cababilities
+              </h2>
+              <p class="lead">
+                Browse through our exclusive collection of minimalistic and
+                sleek products, designed to meet the modern needs with style and
+                functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Product Slider (Bootstrap Carousel) -->
+        <div class="col-md-6">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item pcb-display-slider-item active">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img src="/public/images/PCB/pcb.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">PCB Design</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Up to 12 layers with high-density interconnects.
+                      </li>
+                      <li class="list-group-item">
+                        Supports boards up to 20 inches x 12 inches.
+                      </li>
+                      <li class="list-group-item">
+                        Designed for Mil-grade applications with advanced
+                        thermal dissipation.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img
+                    src="/public/images/PCB/processor.png"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Processors</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Expertise with Intel Pentium Centrino Mobile Processors
+                        and Chipsets (855/965).
+                      </li>
+                      <li class="list-group-item">
+                        Expertise with Intel Pentium Centrino Mobile Processors
+                        and Chipsets (855/965).
+                      </li>
+                      <li class="list-group-item">
+                        Integration and optimization of multi-processor
+                        architectures.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img
+                    src="/public/images/PCB/microprocessor.png"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Microcontrollers</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Development with 8051, ARM7, PIC, ATMega, and Motorola
+                        HC8/HC12 families.
+                      </li>
+                      <li class="list-group-item">
+                        Firmware development and low-power optimization.
+                      </li>
+                      <li class="list-group-item">
+                        System integration including real-time control and
+                        communication interfaces.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img src="/public/images/PCB/dsp.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Digital Signal Processors (DSPs)</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Texas Instruments DSPs for real-time audio, video, and
+                        communication processing.
+                      </li>
+                      <li class="list-group-item">
+                        Optimized algorithm implementation for high-throughput
+                        applications.
+                      </li>
+                      <li class="list-group-item">
+                        Board-level integration and memory interfacing for DSPs.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img src="/public/images/PCB/fpga.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">FPGA / CPLD Designs</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Expertise with Xilinx, Altera, Cypress, and Lattice
+                        FPGAs and CPLDs.
+                      </li>
+                      <li class="list-group-item">
+                        Complex logic design with VHDL/Verilog for various
+                        industrial applications.
+                      </li>
+                      <li class="list-group-item">
+                        FPGA solutions with densities up to 1 million system
+                        gates.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img src="/public/images/PCB/ram.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Memory Design</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        High-speed SDRAM, DDR, and DDR2 interfacing and routing
+                        expertise.
+                      </li>
+                      <li class="list-group-item">
+                        Memory subsystem optimization for performance and
+                        reliability.
+                      </li>
+                      <li class="list-group-item">
+                        Signal integrity and timing closure for memory
+                        interfaces.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img
+                    src="/public/images/PCB/msanlg.png"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Interconnect Buses</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Designs with ISA, PCI, PC104, and PCMCIA bus standards.
+                      </li>
+                      <li class="list-group-item">
+                        System expansion and peripheral integration via standard
+                        buses.
+                      </li>
+                      <li class="list-group-item">
+                        Custom bus interface development for legacy and modern
+                        systems.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img src="/public/images/PCB/cmi.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Communication Interfaces</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        UART (RS232/RS485/RS422), SPI, I2C, CAN, and USB
+                        protocol designs.
+                      </li>
+                      <li class="list-group-item">
+                        Wireless interfaces: Bluetooth and Zigbee connectivity
+                        solutions.
+                      </li>
+                      <li class="list-group-item">
+                        Ethernet, GPIB, IRDA, and modem-based communication
+                        systems.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img
+                    src="/public/images/PCB/periconnet.png"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Peripheral Interconnects</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        IDE, SCSI, and SATA design and integration for storage
+                        and peripherals.
+                      </li>
+                      <li class="list-group-item">
+                        High-speed data transfer optimization.
+                      </li>
+                      <li class="list-group-item">
+                        Embedded storage controller designs.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img src="/public/images/PCB/ang.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Analog Circuit Design</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Signal conditioning circuits for sensors and industrial
+                        interfaces.
+                      </li>
+                      <li class="list-group-item">
+                        ADC and DAC integration for high-accuracy data
+                        conversion.
+                      </li>
+                      <li class="list-group-item">
+                        Filter design for EMI/EMC compliance and signal
+                        enhancement.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item pcb-display-slider-item">
+                <div class="card shadow my-3" style="width: 22rem">
+                  <img
+                    src="/public/images/PCB/msanlg.png"
+                    class="card-img-top"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Mixed-Signal Design</h5>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        Seamless integration of high-speed digital and sensitive
+                        analog circuits.
+                      </li>
+                      <li class="list-group-item">
+                        Board-level layout practices for minimizing noise and
+                        cross-talk.
+                      </li>
+                      <li class="list-group-item">
+                        Application in industrial automation, communication, and
+                        medical systems.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="pcb-display-slider-cntrl-btn carousel-control-prev shadow-lg rounded-2 bg-deep-navy my-auto"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next pcb-display-slider-cntrl-btn shadow-lg rounded-2 bg-deep-navy my-auto"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /pcb section end -->
+    <!-- embedded software solution -->
+    <section
+      class="container-fluid p-0 m-0 border-bottom border-top py-3 py-lg-5 bg-white"
+    >
+      <div class="container">
+        <h2 class="display-4 fw-bold feature-title text-center mb-5">
+          Embedded Software Design
+        </h2>
+        <div class="row featurette">
+          <div class="col-md-7 py-3">
+            <h2 class="featurette-heading fw-normal lh-1 py-3">
+              Embedded Software Services
+              <span class="text-body-secondary">at a Glance</span>
+            </h2>
+            <p class="lead">
+              From simple microcontroller firmware to complex real-time systems
+              with multi-processor architectures, Caravel Systems Inc delivers
+              embedded solutions you can trust.
+            </p>
+            <div class="row g-4">
+              <div class="col-6 col-lg-4">
+                <div class="h-100 card shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Requirement Capturing</h5>
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Architecture Design</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Hardware/Software Partitioning</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Coding</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Testing</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Maintenance Support</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/public/images/emb/section-one.png"
+              class="img-fluid rounded h-100 w-100"
+            />
+          </div>
+        </div>
+        <hr class="my-lg-5 my-3" />
+        <div class="row featurette">
+          <div class="col-md-5">
+            <img
+              src="/public/images/emb/section-two.png"
+              class="img-fluid rounded h-100 w-100 object-fit-cover"
+            />
+          </div>
+          <div class="col-md-7 py-3">
+            <h2 class="featurette-heading fw-normal lh-1 py-3">
+              Specialized Expertise in
+              <span class="text-body-secondary">Embedded Systems</span>
+            </h2>
+            <p class="lead">
+              Caravel Systems delivers powerful, cost-effective embedded
+              software solutions across platforms — from simple devices to
+              complex systems.
+            </p>
+            <div class="row g-4">
+              <div class="col-6 col-lg-4">
+                <div class="h-100 card shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Board Bring-up</h5>
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Peripheral Drivers</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Real-Time Applications</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Embedded Controllers</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Machine Automation</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Firmware Re-engineering</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-4 align-items-center justify-content-center">
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Digital Image Processing</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-5" />
+        <div class="row featurette">
+          <div class="col-md-7 py-3">
+            <h2 class="featurette-heading fw-normal lh-1 py-3">
+              Core Capabilities
+              <span class="text-body-secondary">& Technology Stach</span>
+            </h2>
+            <p class="lead">
+              Mastering every layer of embedded development — from hardware
+              bring-up to advanced software stacks, Caravel Systems powers
+              innovation with precision.
+            </p>
+            <div class="row g-4">
+              <div class="col-6 col-lg-4">
+                <div class="h-100 card shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Board Bring-up & POST</h5>
+                      <p class="card-text"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Diagnostics</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Peripheral Drivers</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>RTOS & File Systems</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Firmware Re-engineering</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>BIOS Development</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row py-4 align-items-center justify-content-center">
+              <div class="col-6 col-lg-4">
+                <div class="card h-100 shadow-sm rounded">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Chip Support Tools</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="/public/images/emb/section-three.png"
+              class="img-fluid rounded h-100 w-100 object-fit-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /embedded software solution -->
+    <!-- services CTA -->
+    <section class="py-5 bg-light border-top border-bottom">
+      <div class="container text-center">
+        <h2 class="mb-4">Build Smarter. Launch Faster.</h2>
+        <p class="lead mb-4">
+          Our embedded software development services encompass every phase of
+          the design process, from capturing functional requirements to
+          post-deployment maintenance and support.
+        </p>
+        <div
+          class="btn-wrapper"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800"
+        >
+          <!-- First Button (Primary Theme) -->
+          <button class="cta-redirect-btn">
+            Book a Consultation
+            <span class="arrow-right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793L10.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </span>
+          </button>
+
+          <!-- Second Button (Alternate Theme) -->
+          <button class="cta-scroll-btn">
+            See More
+            <span class="arrow-down">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 1 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 1 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /services CTA -->
+    <!-- /featured services -->
+    <!-- footer -->
+    <footer class="border-top primary-gradient">
+      <div class="container py-5">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-around"
+        >
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="./public/images/icons/caravel-logo.png"
+                alt="Caravel Logo in footer"
+              />
+            </a>
+          </div>
+
+          <div class="col py-3">
+            <h5 class="text-center footer-text">Pages</h5>
+            <ul class="nav flex-column text-center">
+              <li class="nav-item mb-2">
+                <a href="/" class="nav-link p-0 footer-links footer-text"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/services.html"
+                  class="nav-link p-0 footer-links footer-text"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="/about.html"
+                  class="nav-link p-0 footer-links footer-text"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 footer-links footer-text"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5 class="footer-text">Caravel Systems Inc</h5>
+            <ul class="nav flex-column footer-text">
+              <p class="lead">
+                2nd Floor, North 1st Street <br />
+                San Jose, CA 95131
+              </p>
+              <p class="lead">
+                <strong>Phone:</strong> +1 (510) 292-7988 <br />
+                <strong>Email:</strong> sales@caravelsystems.com
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center py-3 footer-copyright">
+        <p class="fs-5 p-0 m-0 footer-text">Caravel Systems Inc © 2025</p>
+      </div>
+    </footer>
+    <!-- /footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+      integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({

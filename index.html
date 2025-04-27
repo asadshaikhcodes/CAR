@@ -15,7 +15,7 @@
     <link href="./styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <nav
         class="navbar navbar-expand-lg nav-bg"
         aria-label="Offcanvas navbar large"
@@ -63,7 +63,7 @@
                   <a
                     class="nav-link active nav-link-white"
                     aria-current="page"
-                    href="index.html"
+                    href="/"
                     >HOME</a
                   >
                 </li>
@@ -75,6 +75,11 @@
                 <li class="nav-item mx-lg-2 active">
                   <a class="nav-link nav-link-white" href="/services.html"
                     >SERVICES</a
+                  >
+                </li>
+                <li class="nav-item mx-lg-2 active">
+                  <a class="nav-link nav-link-white" href="/contact.html"
+                    >CONTACT</a
                   >
                 </li>
                 <!-- <li class="nav-item dropdown nav-bg mx-lg-2">
@@ -249,7 +254,9 @@
                         src="./public/images/pcb.jpg"
                         class="services-img-border card-img-top"
                       />
-                      <div class="card-body text-start services-content">
+                      <div
+                        class="card-body text-start services-content primary-gradient"
+                      >
                         <h5 class="card-title">High-Speed Board Design</h5>
                         <p class="card-text">
                           Engineered for Speed. Designed with Precision,
@@ -265,7 +272,9 @@
                         src="./public/images/micro-processor.jpg"
                         class="card-img-top services-img-border"
                       />
-                      <div class="card-body text-start services-content">
+                      <div
+                        class="card-body text-start services-content primary-gradient"
+                      >
                         <h5 class="card-title">Microprocessor/DSP Designs</h5>
                         <p class="card-text">
                           Robust microprocessor and Digital Signal Processing
@@ -280,7 +289,9 @@
                         src="./public/images/defense-surv.jpg"
                         class="card-img-top services-img-border"
                       />
-                      <div class="card-body text-start services-content">
+                      <div
+                        class="card-body text-start services-content primary-gradient"
+                      >
                         <h5 class="card-title">FPGA Development</h5>
                         <p class="card-text">
                           Design and implementation of high-speed FPGA systems
@@ -297,7 +308,9 @@
                         src="./public/images/embedded-software.jpg"
                         class="card-img-top services-img-border"
                       />
-                      <div class="card-body text-start services-content">
+                      <div
+                        class="card-body text-start services-content primary-gradient"
+                      >
                         <h5 class="card-title">
                           Embedded Software Development
                         </h5>
@@ -315,7 +328,9 @@
                         src="./public/images/mech.png"
                         class="card-img-top services-img-border"
                       />
-                      <div class="card-body text-start services-content">
+                      <div
+                        class="card-body text-start services-content primary-gradient"
+                      >
                         <h5 class="card-title">
                           Mechanical Structure Manufacturing
                         </h5>
@@ -333,7 +348,9 @@
                         src="./public/images/thermal.png"
                         class="card-img-top services-img-border"
                       />
-                      <div class="card-body text-start services-content">
+                      <div
+                        class="card-body text-start services-content primary-gradient"
+                      >
                         <h5 class="card-title">
                           Thermal and Structural Analysis
                         </h5>
@@ -346,6 +363,13 @@
                     </div>
                   </div>
                 </div>
+                <button class="btn btn-lg btn-primary-gradient mx-auto d-block my-5">
+                  <a
+                    href="/services.html"
+                    class="text-decoration-none text-white"
+                    >More Services</a
+                  >
+                </button>
               </div>
             </div>
             <!-- /services cards -->
@@ -358,7 +382,7 @@
         <div class="container py-lg-5">
           <div class="row">
             <div class="col-md-6 ps-lg-3 py-lg-5">
-              <h5>Our Expertise</h5>
+              <h5 class="sub-heading">Our Expertise</h5>
               <h4 class="heading display-5 m-0 p-0">
                 Innovative Solutions for Complex Challenges
               </h4>
@@ -477,11 +501,16 @@
             of high-performance, mission-critical solutions for the defense
             sector.
           </p>
+          <button class="btn btn-lg btn-primary-gradient mx-auto d-block">
+            <a href="/about.html" class="text-decoration-none text-white"
+              >More About Us</a
+            >
+          </button>
         </div>
       </div>
       <!-- /home page end section  -->
       <!-- FOOTER -->
-      <footer class="border-top primary-gradient-to-bottom footer-bg">
+      <footer class="border-top primary-gradient">
         <div class="container py-5">
           <div
             class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-around"
@@ -498,55 +527,53 @@
               </a>
             </div>
 
-            <div class="col mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
+            <div class="col py-3">
+              <h5 class="text-center footer-text">Pages</h5>
+              <ul class="nav flex-column text-center">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">Home</a>
+                  <a href="/" class="nav-link p-0 footer-links footer-text"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">Features</a>
+                  <a
+                    href="/services.html"
+                    class="nav-link p-0 footer-links footer-text"
+                    >Services</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">Pricing</a>
+                  <a
+                    href="/about.html"
+                    class="nav-link p-0 footer-links footer-text"
+                    >About</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">FAQs</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">About</a>
+                  <a href="#" class="nav-link p-0 footer-links footer-text"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>
 
             <div class="col mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Features</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Pricing</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                </li>
+              <h5 class="footer-text">Caravel Systems Inc</h5>
+              <ul class="nav flex-column footer-text">
+                <p class="lead">
+                  2nd Floor, North 1st Street <br />
+                  San Jose, CA 95131
+                </p>
+                <p class="lead">
+                  <strong>Phone:</strong> +1 (510) 292-7988 <br />
+                  <strong>Email:</strong> sales@caravelsystems.com
+                </p>
               </ul>
             </div>
           </div>
         </div>
         <div class="container-fluid text-center py-3 footer-copyright">
-          <p class="fs-5 p-0 m-0">Caravel Systems Inc © 2025</p>
+          <p class="fs-5 p-0 m-0 footer-text">Caravel Systems Inc © 2025</p>
         </div>
       </footer>
     </main>

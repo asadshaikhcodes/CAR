@@ -15,7 +15,7 @@
     <link href="./styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <nav
         class="navbar navbar-expand-lg nav-bg"
         aria-label="Offcanvas navbar large"
@@ -63,18 +63,23 @@
                   <a
                     class="nav-link nav-link-white"
                     aria-current="page"
-                    href="index.html"
+                    href="/"
                     >HOME</a
                   >
                 </li>
                 <li class="nav-item mx-lg-2">
-                  <a class="nav-link active nav-link-white" href="/about.html"
+                  <a class="nav-link active nav-link-white" href="#"
                     >ABOUT</a
                   >
                 </li>
-                <li class="nav-item mx-lg-2 active">
+                <li class="nav-item mx-lg-2">
                   <a class="nav-link nav-link-white" href="/services.html"
                     >SERVICES</a
+                  >
+                </li>
+                <li class="nav-item mx-lg-2">
+                  <a class="nav-link nav-link-white" href="/contact.html"
+                    >CONTACT</a
                   >
                 </li>
                 <!-- <li class="nav-item dropdown nav-bg mx-lg-2">
@@ -332,7 +337,7 @@
       </div>
       <!-- /about ender -->
       <!-- FOOTER -->
-      <footer class="border-top primary-gradient-to-bottom footer-bg">
+      <footer class="border-top primary-gradient">
         <div class="container py-5">
           <div
             class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-around"
@@ -349,55 +354,53 @@
               </a>
             </div>
 
-            <div class="col mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
+            <div class="col py-3">
+              <h5 class="text-center footer-text">Pages</h5>
+              <ul class="nav flex-column text-center">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">Home</a>
+                  <a href="/" class="nav-link p-0 footer-links footer-text"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">Features</a>
+                  <a
+                    href="/services.html"
+                    class="nav-link p-0 footer-links footer-text"
+                    >Services</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">Pricing</a>
+                  <a
+                    href="#"
+                    class="nav-link p-0 footer-links footer-text"
+                    >About</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">FAQs</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links">About</a>
+                  <a href="/contact.html" class="nav-link p-0 footer-links footer-text"
+                    >Contact</a
+                  >
                 </li>
               </ul>
             </div>
 
             <div class="col mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Features</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary"
-                    >Pricing</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-                </li>
+              <h5 class="footer-text">Caravel Systems Inc</h5>
+              <ul class="nav flex-column footer-text">
+                <p class="lead">
+                  2nd Floor, North 1st Street <br />
+                  San Jose, CA 95131
+                </p>
+                <p class="lead">
+                  <strong>Phone:</strong> +1 (510) 292-7988 <br />
+                  <strong>Email:</strong> sales@caravelsystems.com
+                </p>
               </ul>
             </div>
           </div>
         </div>
         <div class="container-fluid text-center py-3 footer-copyright">
-          <p class="fs-5 p-0 m-0">Caravel Systems Inc © 2025</p>
+          <p class="fs-5 p-0 m-0 footer-text">Caravel Systems Inc © 2025</p>
         </div>
       </footer>
     </main>
