@@ -12,7 +12,7 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
-    <link href="./styles/index.css" rel="stylesheet" />
+    <link href="./styles/min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="sticky-top">
@@ -216,7 +216,7 @@
         <div class="row">
           <div class="col-md-6 ps-lg-3">
             <h5 class="sub-heading mb-2">About Caravel Systems Inc</h5>
-            <h4 class="heading m-0 p-0 display-5">
+            <h4 class="section-heading fw-bold p-0 display-5">
               Crafting tomorrow’s tech today — hardware and embedded solutions,
               reimagined.
             </h4>
@@ -242,7 +242,9 @@
         <div class="container py-lg-5">
           <div class="text-center">
             <h5 class="sub-heading">Our Services</h5>
-            <h3>Comprehensive Service Offerings and Technological Expertise</h3>
+            <h3 class="section-heading fw-bold">
+              Comprehensive Service Offerings and Technological Expertise
+            </h3>
 
             <!-- services cards -->
             <div class="py-5 bg-body-tertiary">
@@ -363,7 +365,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="btn btn-lg btn-primary-gradient mx-auto d-block my-5">
+                <button
+                  class="btn btn-lg btn-primary-gradient mx-auto d-block my-5"
+                >
                   <a
                     href="/services.html"
                     class="text-decoration-none text-white"
@@ -378,42 +382,37 @@
       </div>
       <!-- /.about and services end -->
       <!-- featured -->
-      <div class="container-fluid m-0 p-0 primary-gradient-to-bottom">
-        <div class="container py-lg-5">
-          <div class="row">
-            <div class="col-md-6 ps-lg-3 py-lg-5">
-              <h5 class="sub-heading">Our Expertise</h5>
-              <h4 class="heading display-5 m-0 p-0">
-                Innovative Solutions for Complex Challenges
-              </h4>
-              <p class="lead">
-                Our team of experts is dedicated to delivering innovative
-                solutions that meet the unique needs of our clients.
-              </p>
-            </div>
-            <div class="col-md-6">
-              <img
-                class="img-fluid rounded-4"
-                src="./public/images/featured-tech.jpg"
-                alt="Caravel Systems Inc Brief About"
-              />
-            </div>
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-md-7">
+            <h5 class="sub-heading">Our Expertise</h5>
+            <h4 class="section-heading fw-bold display-5 m-0 p-0">
+              Innovative Solutions for Complex Challenges
+            </h4>
+            <p class="lead py-5">
+              Our team of experts is dedicated to delivering innovative
+              solutions that meet the unique needs of our clients.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              class="rounded-4 about-img-responsive"
+              src="./public/images/featured-tech.jpg"
+              alt="Caravel Systems Inc Brief About"
+              height="400px"
+              width="500px"
+            />
           </div>
         </div>
+        <hr class="my-5" />
       </div>
       <!-- /featured end -->
       <!-- AI intro Home page -->
+
       <div class="container-fluid m-0 py-lg-5">
         <div class="container py-lg-5">
-          <div class="row">
-            <div class="col-md-6">
-              <img
-                class="img-fluid rounded-4 ai-tech-home-img my-lg-5"
-                src="./public/images/AI-tech.jpg"
-                alt="Caravel Systems Inc Brief About"
-              />
-            </div>
-            <div class="col-md-6">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
               <h5 class="sub-heading">Driven by AI. Defined by Innovation.</h5>
               <h4 class="heading display-6 m-0 p-0">
                 Forging the Future: AI & IoT Powering the Next Gen of Tech
@@ -426,63 +425,59 @@
                 sector, enabling smarter, more autonomous systems with enhanced
                 decision-making capabilities. Caravel is actively involved in:
               </p>
-              <div class="list-group list-group-flush">
-                <ul
-                  class="list-group-item list-group-item-action d-flex gap-3 py-3"
-                  aria-current="true"
-                >
-                  <img
-                    src="./public/images/icons/AI-list-icon.png"
-                    alt=""
-                    width="100"
-                    height="100"
-                    class="rounded-circle flex-shrink-0"
-                  />
-                  <div class="d-flex gap-2 w-100 justify-content-between">
-                    <div>
-                      <h6 class="mb-0">AI Integration</h6>
-                      <p class="mb-0 opacity-75">
-                        Developing advanced AI-driven solutions for predictive
-                        maintenance, autonomous systems, and real-time
-                        decision-making.
-                      </p>
-                    </div>
-                  </div>
-                </ul>
-                <ul
-                  class="list-group-item list-group-item-action d-flex gap-3 py-3"
-                  aria-current="true"
-                >
+              <div class="row">
+                <div class="col-6 text-center">
                   <img
                     src="./public/images/icons/iot-list-icon.png"
                     alt=""
-                    width="100"
-                    height="100"
+                    width="100px"
+                    height="100px"
                     class="rounded-circle flex-shrink-0"
                   />
-                  <div class="d-flex gap-2 w-100 justify-content-between">
-                    <div>
-                      <h6 class="mb-0">IoT-Enabled Systems</h6>
-                      <p class="mb-0 opacity-75">
-                        Designing and deploying IoT-enabled hardware and
-                        software solutions for enhanced data connectivity,
-                        real-time monitoring, and secure communication in
-                        defense systems.
-                      </p>
-                    </div>
+                  <div>
+                    <h6 class="mb-0">IoT-Enabled Systems</h6>
+                    <p class="mb-0 opacity-75">
+                      Designing and deploying IoT-enabled hardware and software
+                      solutions for enhanced data connectivity, real-time
+                      monitoring, and secure communication in defense systems.
+                    </p>
                   </div>
-                </ul>
+                </div>
+                <div class="col-6 text-center">
+                  <img
+                    src="./public/images/icons/AI-list-icon.png"
+                    alt=""
+                    width="100px"
+                    height="100px"
+                    class="rounded-circle flex-shrink-0"
+                  />
+                  <div>
+                    <h6 class="mb-0">AI Integration</h6>
+                    <p class="mb-0 opacity-75">
+                      Developing advanced AI-driven solutions for predictive
+                      maintenance, autonomous systems, and real-time
+                      decision-making.
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img
+                class="rounded-4 ai-tech-home-img my-lg-5 about-img-responsive img-fluid"
+                src="/public/images/AI-tech.jpg"
+                alt="Caravel Systems Inc Brief About"
+              />
             </div>
           </div>
         </div>
       </div>
       <!-- /AI intro Home page  -->
       <!-- expertise flash -->
-      <div class="container-fluid expertise-flash m-0 p-0">
-        <div class="w-100 h-100 expertise-flash-gradient-bg py-lg-5 py-sm-2">
-          <div class="container py-lg-5 py-sm-2">
-            <h3 class="heading m-0 p-0 display-5 fw-bold text-center">
+      <div class="container-fluid expertise-flash m-0 p-0" style="height: 300px;">
+        <div class="w-100 h-100 expertise-flash-gradient-bg py-5">
+          <div class="container py-5">
+            <h3 class="heading m-0 py-5 py-lg-0 display-5 fw-bold text-center">
               Strategic Focus on AI, IoT, and Future-Proof Solutions
             </h3>
           </div>
@@ -490,12 +485,12 @@
       </div>
       <!-- /expertise flash end  -->
       <!-- home page end section -->
-      <div class="container-fluid py-lg-5 py-sm-3 my-lg-5 home-ender">
+      <div class="container-fluid py-lg-5 py-sm-3 my-5 home-ender">
         <div class="container py-lg-5">
-          <h3 class="heading m-0 p-0 display-5 fw-bold text-center">
+          <h3 class="section-heading mb-4 p-0 display-5 fw-bold text-center-lg">
             Commitment to Quality and Reliability
           </h3>
-          <p class="lead text-center fs-3">
+          <p class="lead text-center-lg fs-3">
             With a steadfast commitment to quality, innovation, and customer
             satisfaction, Caravel Systems Inc continues to be a leading provider
             of high-performance, mission-critical solutions for the defense
@@ -518,7 +513,7 @@
             <div class="col mb-3">
               <a
                 href="/"
-                class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+                class="d-flex align-items-center justify-content-center mb-3 link-body-emphasis text-decoration-none"
               >
                 <img
                   src="./public/images/icons/caravel-logo.png"
@@ -550,25 +545,32 @@
                   >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links footer-text"
+                  <a
+                    href="/contact.html"
+                    class="nav-link p-0 footer-links footer-text"
                     >Contact</a
                   >
                 </li>
               </ul>
             </div>
-
-            <div class="col mb-3">
-              <h5 class="footer-text">Caravel Systems Inc</h5>
-              <ul class="nav flex-column footer-text">
-                <p class="lead">
-                  2nd Floor, North 1st Street <br />
-                  San Jose, CA 95131
-                </p>
-                <p class="lead">
-                  <strong>Phone:</strong> +1 (510) 292-7988 <br />
-                  <strong>Email:</strong> sales@caravelsystems.com
-                </p>
-              </ul>
+            <div
+              class="col mb-3 d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <h5 class="footer-text fw-bold display-6">
+                  Caravel Systems Inc
+                </h5>
+                <ul class="nav flex-column footer-text">
+                  <p class="lead">
+                    2nd Floor, North 1st Street <br />
+                    San Jose, CA 95131
+                  </p>
+                  <p class="lead">
+                    <strong>Phone:</strong> +1 (510) 292-7988 <br />
+                    <strong>Email:</strong> sales@caravelsystems.com
+                  </p>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

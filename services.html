@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Caravel Systems Inc - Services</title>
-
-    <!-- Bootstrap 5.3 CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
     <!-- Custom Styles -->
-    <link href="/styles/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-light">
@@ -122,41 +120,54 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section text-white">
-      <div class="container col-xxl-8 hero-content p-0">
-        <div class="row flex-lg-row-reverse align-items-center p-0">
-          <div class="col-10 col-sm-8 col-lg-6 p-0">
-            <img
-              src="./public/images/services-hero-right.svg"
-              alt="Hero Visual"
-              class="rounded-2 mt-lg-5 service-hero-right-img"
-              width="500"
-              height="500"
-            />
-          </div>
-          <div class="col-lg-6">
-            <h5 class="fw-bold bg-deep-navy p-2 sub-heading-bg rounded-2">
-              Caravel Systems Inc
-            </h5>
-            <h1 class="display-4 fw-bold">
-              Powering Innovation from Chip to Cloud
-            </h1>
-            <p class="lead">
-              Full-spectrum design and development tailored for complex,
-              mission-critical needs
-            </p>
-            <!-- <a
-              href="#"
-              class="btn bg-accent-blue text-white hover-bg-primary mt-3"
-              >See More</a
-            > -->
+    <section class="hero-section text-white w-100 h-100">
+      <div class="services-hero-bg-overlay w-100 h-100">
+        <div class="container hero-content col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="/public/images/services-hero-right.svg"
+                class="service-hero-img-right rounded-4"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h5 class="fw-bold bg-deep-navy p-2 sub-heading-bg rounded-2">
+                Caravel Systems Inc
+              </h5>
+              <h1 class="display-5 fw-bold lh-1 mb-3">
+                Powering Innovation from Chip to Cloud
+              </h1>
+              <p class="lead">
+                Full-spectrum design and development tailored for complex,
+                mission-critical needs
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="btn button-primary btn-lg px-4 me-md-2"
+                >
+                  <a
+                    href="/contact.html"
+                    class="text-decoration-none text-white"
+                  >
+                    Get Started
+                  </a>
+                </button>
+                <button type="button" class="btn button-secondary btn-lg px-4">
+                  <a href="#why" class="text-decoration-none text-white">
+                    See More
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Why Us Section -->
-    <section class="py-3 bg-light">
+    <section class="py-3 bg-light" id="why">
       <div class="container py-5">
         <h2 class="text-center mb-5 fw-bold us-heading">
           Why Caravel System Inc?
@@ -272,7 +283,7 @@
     <!-- product design & development -->
     <section class="feature-process py-5 border-top border-bottom bg-white">
       <div class="container">
-        <h2 class="feature-title text-center mb-5">
+        <h2 class="text-center mb-5 section-heading fw-bold display-5">
           Product Design & Development
         </h2>
 
@@ -282,9 +293,7 @@
             <img
               src="./public/images/ors.jpg"
               alt=""
-              class="rounded-4 product-design-img"
-              width="500"
-              height="350"
+              class="rounded-4 pdd-img"
             />
           </div>
           <div class="col-md-6">
@@ -306,12 +315,7 @@
         <!-- Step 2 -->
         <div class="row align-items-center mb-5 flex-md-row-reverse">
           <div class="col-md-6">
-            <img
-              src="./public/images/ce.jpg"
-              class="rounded-4 product-design-img"
-              width="500"
-              height="350"
-            />
+            <img src="./public/images/ce.jpg" class="rounded-4 pdd-img" />
           </div>
           <div class="col-md-6">
             <h3 class="">
@@ -334,7 +338,7 @@
           <div class="col-md-6">
             <img
               src="./public/images/ee.jpg"
-              class="rounded-4 product-design-img"
+              class="rounded-4 pdd-img"
               width="500"
               height="350"
             />
@@ -359,7 +363,7 @@
           <div class="col-md-6">
             <img
               src="./public/images/ed.jpg"
-              class="rounded-4 product-design-img"
+              class="rounded-4 pdd-img"
               width="500"
               height="350"
             />
@@ -391,7 +395,7 @@
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Precision-crafted electronics – built with code, creativity, and care.
+          Precision-crafted electronics - built with code, creativity, and care.
         </p>
       </div>
       <div class="container px-4 py-5" id="featured-3">
@@ -527,7 +531,7 @@
     <!-- /product design & development end -->
     <!-- services CTA -->
     <section class="py-5 bg-white border-top border-bottom">
-      <div class="container text-center">
+      <div class="container text-lg-center">
         <h2 class="mb-4">Power Up Your Product</h2>
         <p class="lead mb-4">
           At Caravel Systems Inc, we don’t just deliver solutions — we drive
@@ -542,10 +546,13 @@
           data-aos-delay="200"
           data-aos-duration="800"
         >
-          <!-- First Button (Primary Theme) -->
-          <button class="cta-redirect-btn">
-            Lets Build Together
-            <span class="arrow-right">
+          <button
+            class="btn btn-lg button-primary d-flex justify-content-center align-items-center"
+          >
+            <a href="/contact.html" class="text-decoration-none text-white"
+              >Let's Build Together</a
+            >
+            <span class="arrow-right mx-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -561,10 +568,10 @@
               </svg>
             </span>
           </button>
-
-          <!-- Second Button (Alternate Theme) -->
-          <button class="cta-scroll-btn">
-            See More
+          <button
+            class="cta-scroll-btn btn btn-lg button-secondary d-flex justify-content-center align-items-center mt-3 mt-lg-0"
+          >
+            <a href="#hdw" class="text-decoration-none text-white">See More</a>
             <span class="arrow-down">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -586,11 +593,11 @@
     </section>
     <!-- /services CTA -->
     <!-- Hardware Design & Development section -->
-    <section class="bg-light border-bottom border-top py-5">
+    <section class="bg-light border-bottom border-top py-5" id="hdw">
       <div class="container">
         <div class="row justify-content-center text-center section-intro">
           <div class="col-12 col-md-9 col-lg-8 mb-5">
-            <h2 class="feature-title text-center mb-3">
+            <h2 class="section-heading fw-bold display-5 text-center mb-3 px-3">
               Hardware/Board Design & Development
             </h2>
             <p
@@ -607,7 +614,7 @@
         </div>
         <!--end of row-->
 
-        <ul class="hdw-feature-list">
+        <ul class="hdw-feature-list p-0 m-0">
           <li class="row justify-content-around align-items-center">
             <div class="col-12 col-md-6 col-lg-5" data-aos="fade-right">
               <img
@@ -621,7 +628,9 @@
               data-aos="fade-left"
               data-aos-delay="100"
             >
-              <h5>Single Board Computers (SBC)</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">
+                Single Board Computers (SBC)
+              </h5>
               <p>
                 Custom designs for high-performance SBCs tailored to specific
                 industrial applications.
@@ -633,7 +642,7 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-right"
-              data-aos-delay="200"
+              data-aos-delay="150"
             >
               <img
                 alt="Industrial Motherboard Designs"
@@ -644,9 +653,11 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-left"
-              data-aos-delay="300"
+              data-aos-delay="200"
             >
-              <h5>Industrial Motherboard Designs</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">
+                Industrial Motherboard Designs
+              </h5>
               <p>
                 Development of robust, reliable motherboards for industrial
                 environments.
@@ -658,7 +669,7 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-right"
-              data-aos-delay="400"
+              data-aos-delay="250"
             >
               <img
                 alt="Add-on Cards"
@@ -669,9 +680,9 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-left"
-              data-aos-delay="500"
+              data-aos-delay="300"
             >
-              <h5>Add-on Cards</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">Add-on Cards</h5>
               <p>
                 Design and development of add-on cards based on various bus
                 architectures, including PCI, ISA, PC104, PCI104, and PCMCIA.
@@ -683,7 +694,7 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-right"
-              data-aos-delay="600"
+              data-aos-delay="350"
             >
               <img
                 alt="Peripheral Adapters"
@@ -694,9 +705,9 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-left"
-              data-aos-delay="700"
+              data-aos-delay="400"
             >
-              <h5>Peripheral Adapters</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">Peripheral Adapters</h5>
               <p>
                 Customized peripheral adapters for storage interfaces like IDE,
                 SATA, SCSI, and Compact Flash.
@@ -708,7 +719,7 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-right"
-              data-aos-delay="800"
+              data-aos-delay="450"
             >
               <img
                 alt="Micro-controller Based Boards"
@@ -719,9 +730,11 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-left"
-              data-aos-delay="900"
+              data-aos-delay="500"
             >
-              <h5>Micro-controller Based Boards</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">
+                Micro-controller Based Boards
+              </h5>
               <p>
                 Design of standalone and handheld systems, as well as standalone
                 and network-enabled industrial controllers.
@@ -733,7 +746,7 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-right"
-              data-aos-delay="1000"
+              data-aos-delay="550"
             >
               <img
                 alt="DSP-based Controllers"
@@ -744,9 +757,9 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-left"
-              data-aos-delay="1100"
+              data-aos-delay="600"
             >
-              <h5>DSP-based Controllers</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">DSP-based Controllers</h5>
               <p>
                 Development of digital signal processing (DSP) controllers for
                 various processing and control applications.
@@ -758,7 +771,7 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-right"
-              data-aos-delay="1200"
+              data-aos-delay="650"
             >
               <img
                 alt="Ruggedized Systems"
@@ -769,9 +782,9 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-left"
-              data-aos-delay="1300"
+              data-aos-delay="700"
             >
-              <h5>Ruggedized Systems</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">Ruggedized Systems</h5>
               <p>
                 Designing rugged systems that meet military and industrial
                 standards for demanding environments.
@@ -783,7 +796,7 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-right"
-              data-aos-delay="1400"
+              data-aos-delay="750"
             >
               <img
                 alt="Silicon Validation and Reference Boards"
@@ -794,9 +807,11 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-left"
-              data-aos-delay="1500"
+              data-aos-delay="800"
             >
-              <h5>Silicon Validation and Reference Boards</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">
+                Silicon Validation and Reference Boards
+              </h5>
               <p>
                 Offering services for silicon validation, including the creation
                 of reference boards for new silicon designs.
@@ -808,7 +823,7 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-right"
-              data-aos-delay="1600"
+              data-aos-delay="850"
             >
               <img
                 alt="Custom Built Test Jigs"
@@ -819,9 +834,9 @@
             <div
               class="col-12 col-md-6 col-lg-5"
               data-aos="fade-left"
-              data-aos-delay="1700"
+              data-aos-delay="900"
             >
-              <h5>Custom Built Test Jigs</h5>
+              <h5 class="my-3 my-md-0 fw-semibold">Custom Built Test Jigs</h5>
               <p>
                 Development of specialized test jigs for product validation and
                 testing.
@@ -832,19 +847,23 @@
       </div>
       <section class="py-5">
         <div class="container">
-          <h2 class="section-title text-center" data-aos="fade-up">
+          <h2
+            class="section-title text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Key Highlights of Our Design & Development Process
           </h2>
           <p
             class="section-subtitle text-muted text-center py-3"
             data-aos="fade-up"
-            data-aos-delay="100"
+            data-aos-delay="150"
           >
             From high-speed, high-density boards with Microprocessors, DSPs, and
             FPGAs to cost-effective, two-layer microcontroller designs — Caravel
             delivers expert solutions, fast and affordable.
           </p>
-          <div class="row g-4">
+          <div class="row row-cols-1 row-cols-lg-4 g-4 khdw-feature-list">
             <!-- Card 1 -->
             <div class="col-8 col-md-6 col-lg-3">
               <div class="hdw-key-card h-100 p-4 text-center">
@@ -935,7 +954,7 @@
         <div
           class="row w-100 h-100 justify-content-center align-items-center text-center py-4"
         >
-          <div class="col-8 col-md-6 col-lg-3">
+          <div class="col-8 col-md-6 col-lg-3 ml-2 ml-lg-0">
             <div class="hdw-key-card h-100 p-4 text-center">
               <div class="hdw-key-card-icon-wrapper mb-3 mx-auto">
                 <img src="/public/images/icons/hdw/9.png" class="img-fluid" />
@@ -952,7 +971,7 @@
     <!-- / Hardware design & Development section end -->
     <!-- services-CTA -->
     <section class="py-5 bg-white border-bottom">
-      <div class="container text-center">
+      <div class="container text-lg-center">
         <h2 class="mb-4">Your Vision. Our Power.</h2>
         <p class="lead mb-4">
           Caravel Systems Inc powers your innovation with expert hardware,
@@ -966,10 +985,13 @@
           data-aos-delay="200"
           data-aos-duration="800"
         >
-          <!-- First Button (Primary Theme) -->
-          <button class="cta-redirect-btn" onclick="scrollToContact()">
-            Get A Custom Solution
-            <span class="arrow-right">
+          <button
+            class="btn btn-lg button-primary d-flex justify-content-center align-items-center"
+          >
+            <a href="/contact.html" class="text-decoration-none text-white"
+              >Get A Custom Solution</a
+            >
+            <span class="arrow-right mx-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -985,10 +1007,10 @@
               </svg>
             </span>
           </button>
-
-          <!-- Second Button (Alternate Theme) -->
-          <button class="cta-scroll-btn">
-            See More
+          <button
+            class="cta-scroll-btn btn btn-lg button-secondary d-flex justify-content-center align-items-center mt-3 mt-lg-0"
+          >
+            <a href="#pcb" class="text-decoration-none text-white">See More</a>
             <span class="arrow-down">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1010,7 +1032,7 @@
     </section>
     <!--/services CTA -->
     <!-- pcb section -->
-    <section class="container py-5">
+    <section class="container py-5" id="pcb">
       <div class="row">
         <!-- Left Column: Creative Heading and Description -->
         <div class="col-md-6 mb-4">
@@ -1018,7 +1040,7 @@
             class="w-100 h-100 d-flex justify-content-center align-items-center"
           >
             <div class="px-lg-3">
-              <h2 class="display-4 fw-bold text-primary">
+              <h2 class="display-5 fw-bold section-heading">
                 PCB Design Cababilities
               </h2>
               <p class="lead">
@@ -1030,12 +1052,11 @@
           </div>
         </div>
 
-        <!-- Right Column: Product Slider (Bootstrap Carousel) -->
         <div class="col-md-6">
-          <div id="carouselExample" class="carousel slide">
+          <div id="pcbCarousel" class="carousel slide">
             <div class="carousel-inner">
-              <div class="carousel-item pcb-display-slider-item active">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5 active">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img src="/public/images/PCB/pcb.png" class="card-img-top" />
                   <div class="card-body">
                     <h5 class="card-title">PCB Design</h5>
@@ -1054,8 +1075,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img
                     src="/public/images/PCB/processor.png"
                     class="card-img-top"
@@ -1079,8 +1100,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img
                     src="/public/images/PCB/microprocessor.png"
                     class="card-img-top"
@@ -1103,8 +1124,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img src="/public/images/PCB/dsp.png" class="card-img-top" />
                   <div class="card-body">
                     <h5 class="card-title">Digital Signal Processors (DSPs)</h5>
@@ -1124,8 +1145,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img src="/public/images/PCB/fpga.png" class="card-img-top" />
                   <div class="card-body">
                     <h5 class="card-title">FPGA / CPLD Designs</h5>
@@ -1146,8 +1167,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img src="/public/images/PCB/ram.png" class="card-img-top" />
                   <div class="card-body">
                     <h5 class="card-title">Memory Design</h5>
@@ -1168,8 +1189,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img
                     src="/public/images/PCB/msanlg.png"
                     class="card-img-top"
@@ -1192,8 +1213,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img src="/public/images/PCB/cmi.png" class="card-img-top" />
                   <div class="card-body">
                     <h5 class="card-title">Communication Interfaces</h5>
@@ -1214,8 +1235,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img
                     src="/public/images/PCB/periconnet.png"
                     class="card-img-top"
@@ -1237,8 +1258,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img src="/public/images/PCB/ang.png" class="card-img-top" />
                   <div class="card-body">
                     <h5 class="card-title">Analog Circuit Design</h5>
@@ -1259,8 +1280,8 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item pcb-display-slider-item">
-                <div class="card shadow my-3" style="width: 22rem">
+              <div class="carousel-item pcb-display-slider-item mb-5">
+                <div class="card shadow my-3 h-100" style="width: 22rem">
                   <img
                     src="/public/images/PCB/msanlg.png"
                     class="card-img-top"
@@ -1286,9 +1307,9 @@
               </div>
             </div>
             <button
-              class="pcb-display-slider-cntrl-btn carousel-control-prev shadow-lg rounded-2 bg-deep-navy my-auto"
+              class="pcb-display-slider-cntrl-btn carousel-control-prev shadow-lg rounded-2 my-auto"
               type="button"
-              data-bs-target="#carouselExample"
+              data-bs-target="#pcbCarousel"
               data-bs-slide="prev"
             >
               <span
@@ -1298,9 +1319,9 @@
               <span class="visually-hidden">Previous</span>
             </button>
             <button
-              class="carousel-control-next pcb-display-slider-cntrl-btn shadow-lg rounded-2 bg-deep-navy my-auto"
+              class="carousel-control-next pcb-display-slider-cntrl-btn shadow-lg rounded-2 my-auto"
               type="button"
-              data-bs-target="#carouselExample"
+              data-bs-target="#pcbCarousel"
               data-bs-slide="next"
             >
               <span
@@ -1319,7 +1340,7 @@
       class="container-fluid p-0 m-0 border-bottom border-top py-3 py-lg-5 bg-white"
     >
       <div class="container">
-        <h2 class="display-4 fw-bold feature-title text-center mb-5">
+        <h2 class="display-4 fw-bold section-heading text-center mb-5">
           Embedded Software Design
         </h2>
         <div class="row featurette">
@@ -1592,10 +1613,13 @@
           data-aos-delay="200"
           data-aos-duration="800"
         >
-          <!-- First Button (Primary Theme) -->
-          <button class="cta-redirect-btn">
-            Book a Consultation
-            <span class="arrow-right">
+          <button
+            class="btn btn-lg button-primary d-flex justify-content-center align-items-center"
+          >
+            <a href="/contact.html" class="text-decoration-none text-white"
+              >Book a Consultation</a
+            >
+            <span class="arrow-right mx-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -1607,26 +1631,6 @@
                 <path
                   fill-rule="evenodd"
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793L10.646 4.354a.5.5 0 1 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </span>
-          </button>
-
-          <!-- Second Button (Alternate Theme) -->
-          <button class="cta-scroll-btn">
-            See More
-            <span class="arrow-down">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-arrow-down"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 1 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 1 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
                 />
               </svg>
             </span>
@@ -1645,7 +1649,7 @@
           <div class="col mb-3">
             <a
               href="/"
-              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+              class="d-flex align-items-center justify-content-center mb-3 link-body-emphasis text-decoration-none"
             >
               <img
                 src="./public/images/icons/caravel-logo.png"
@@ -1677,25 +1681,30 @@
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 footer-links footer-text"
+                <a
+                  href="/contact.html"
+                  class="nav-link p-0 footer-links footer-text"
                   >Contact</a
                 >
               </li>
             </ul>
           </div>
-
-          <div class="col mb-3">
-            <h5 class="footer-text">Caravel Systems Inc</h5>
-            <ul class="nav flex-column footer-text">
-              <p class="lead">
-                2nd Floor, North 1st Street <br />
-                San Jose, CA 95131
-              </p>
-              <p class="lead">
-                <strong>Phone:</strong> +1 (510) 292-7988 <br />
-                <strong>Email:</strong> sales@caravelsystems.com
-              </p>
-            </ul>
+          <div
+            class="col mb-3 d-flex justify-content-center align-items-center"
+          >
+            <div>
+              <h5 class="footer-text fw-bold display-6">Caravel Systems Inc</h5>
+              <ul class="nav flex-column footer-text">
+                <p class="lead">
+                  2nd Floor, North 1st Street <br />
+                  San Jose, CA 95131
+                </p>
+                <p class="lead">
+                  <strong>Phone:</strong> +1 (510) 292-7988 <br />
+                  <strong>Email:</strong> sales@caravelsystems.com
+                </p>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -1718,6 +1727,7 @@
     <script>
       AOS.init({
         once: true,
+        disabled: "mobile",
       });
     </script>
   </body>
