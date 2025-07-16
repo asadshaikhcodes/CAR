@@ -12,12 +12,12 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
-    <link href="styles/min.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
   </head>
   <body>
     <header class="sticky-top">
       <nav
-        class="navbar navbar-expand-lg nav-bg"
+        class="navbar navbar-expand-lg bg-gradient-solid"
         aria-label="Offcanvas navbar large"
       >
         <div class="container">
@@ -149,7 +149,9 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item carousel-bg-size carousel-pcb active">
-            <div class="container-fluid m-0 p-0 hero-gradient-bg h-100 w-100">
+            <div
+              class="container-fluid m-0 p-0 bg-gradient-transparent h-100 w-100"
+            >
               <div class="container">
                 <div class="carousel-caption">
                   <h1 class="display-4 fw-bold">PCB Manufacturing</h1>
@@ -161,7 +163,9 @@
             </div>
           </div>
           <div class="carousel-item carousel-bg-size carousel-embedded">
-            <div class="container-fluid m-0 p-0 hero-gradient-bg h-100 w-100">
+            <div
+              class="container-fluid m-0 p-0 bg-gradient-transparent h-100 w-100"
+            >
               <div class="container">
                 <div class="carousel-caption">
                   <h1 class="display-4 fw-bold">Embedded Software Solutions</h1>
@@ -173,7 +177,9 @@
             </div>
           </div>
           <div class="carousel-item carousel-bg-size carousel-iot">
-            <div class="container-fluid m-0 p-0 h-100 w-100 hero-gradient-bg">
+            <div
+              class="container-fluid m-0 p-0 h-100 w-100 bg-gradient-transparent"
+            >
               <div class="container">
                 <div class="carousel-caption">
                   <h1 class="display-4 fw-bold">IoT Solutions</h1>
@@ -186,22 +192,22 @@
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-btn carousel-prev"
           type="button"
           data-bs-target="#hero-carousel"
           data-bs-slide="prev"
+          aria-label="Previous"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          &#10094;
         </button>
         <button
-          class="carousel-control-next"
+          class="carousel-btn carousel-next"
           type="button"
           data-bs-target="#hero-carousel"
           data-bs-slide="next"
+          aria-label="Next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          &#10095;
         </button>
       </div>
 
@@ -257,7 +263,7 @@
                         class="services-img-border card-img-top"
                       />
                       <div
-                        class="card-body text-start services-content primary-gradient"
+                        class="card-body text-start services-content bg-gradient-solid"
                       >
                         <h5 class="card-title">High-Speed Board Design</h5>
                         <p class="card-text">
@@ -275,7 +281,7 @@
                         class="card-img-top services-img-border"
                       />
                       <div
-                        class="card-body text-start services-content primary-gradient"
+                        class="card-body text-start services-content bg-gradient-solid"
                       >
                         <h5 class="card-title">Microprocessor/DSP Designs</h5>
                         <p class="card-text">
@@ -292,7 +298,7 @@
                         class="card-img-top services-img-border"
                       />
                       <div
-                        class="card-body text-start services-content primary-gradient"
+                        class="card-body text-start services-content bg-gradient-solid"
                       >
                         <h5 class="card-title">FPGA Development</h5>
                         <p class="card-text">
@@ -311,7 +317,7 @@
                         class="card-img-top services-img-border"
                       />
                       <div
-                        class="card-body text-start services-content primary-gradient"
+                        class="card-body text-start services-content bg-gradient-solid"
                       >
                         <h5 class="card-title">
                           Embedded Software Development
@@ -331,7 +337,7 @@
                         class="card-img-top services-img-border"
                       />
                       <div
-                        class="card-body text-start services-content primary-gradient"
+                        class="card-body text-start services-content bg-gradient-solid"
                       >
                         <h5 class="card-title">
                           Mechanical Structure Manufacturing
@@ -351,7 +357,7 @@
                         class="card-img-top services-img-border"
                       />
                       <div
-                        class="card-body text-start services-content primary-gradient"
+                        class="card-body text-start services-content bg-gradient-solid"
                       >
                         <h5 class="card-title">
                           Thermal and Structural Analysis
@@ -366,7 +372,7 @@
                   </div>
                 </div>
                 <button
-                  class="btn btn-lg btn-primary-gradient mx-auto d-block my-5"
+                  class="btn btn-lg btn-bg-gradient-solid mx-auto d-block my-5"
                 >
                   <a
                     href="/services.html"
@@ -474,7 +480,10 @@
       </div>
       <!-- /AI intro Home page  -->
       <!-- expertise flash -->
-      <div class="container-fluid expertise-flash m-0 p-0" style="height: 300px;">
+      <div
+        class="container-fluid expertise-flash m-0 p-0"
+        style="height: 300px"
+      >
         <div class="w-100 h-100 expertise-flash-gradient-bg py-5">
           <div class="container py-5">
             <h3 class="heading m-0 py-5 py-lg-0 display-5 fw-bold text-center">
@@ -496,7 +505,7 @@
             of high-performance, mission-critical solutions for the defense
             sector.
           </p>
-          <button class="btn btn-lg btn-primary-gradient mx-auto d-block">
+          <button class="btn btn-lg btn-bg-gradient-solid mx-auto d-block">
             <a href="/about.html" class="text-decoration-none text-white"
               >More About Us</a
             >
@@ -505,7 +514,7 @@
       </div>
       <!-- /home page end section  -->
       <!-- FOOTER -->
-      <footer class="border-top primary-gradient">
+      <footer class="border-top bg-gradient-solid">
         <div class="container py-5">
           <div
             class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-around"
