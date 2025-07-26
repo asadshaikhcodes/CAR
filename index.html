@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link href="styles/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="sticky-top">
@@ -68,17 +69,17 @@
                   >
                 </li>
                 <li class="nav-item mx-lg-2">
-                  <a class="nav-link nav-link-white" href="/about.html"
+                  <a class="nav-link nav-link-white" href="about.html"
                     >ABOUT</a
                   >
                 </li>
                 <li class="nav-item mx-lg-2 active">
-                  <a class="nav-link nav-link-white" href="/services.html"
+                  <a class="nav-link nav-link-white" href="services.html"
                     >SERVICES</a
                   >
                 </li>
                 <li class="nav-item mx-lg-2 active">
-                  <a class="nav-link nav-link-white" href="/contact.html"
+                  <a class="nav-link nav-link-white" href="contact.html"
                     >CONTACT</a
                   >
                 </li>
@@ -218,14 +219,11 @@
       <!-- about and services
     ================================================== -->
 
-      <div class="container marketing">
+      <div class="container my-5">
         <!-- About start -->
-
-        <hr class="featurette-divider" />
-
-        <div class="row">
+        <div class="row py-lg-5">
           <div class="col-md-6 ps-lg-3">
-            <h5 class="sub-heading mb-2">About Caravel Systems Inc</h5>
+            <h5 class="sub-heading">About Caravel Systems Inc</h5>
             <h4 class="section-heading fw-bold p-0 display-5">
               Crafting tomorrow’s tech today — hardware and embedded solutions,
               reimagined.
@@ -245,10 +243,9 @@
             />
           </div>
         </div>
-        <hr class="featurette-divider mt-3" />
         <!-- /About end -->
       </div>
-      <div class="container-fluid m-0 p-0 services bg-body-tertiary">
+      <div class="container-fluid m-0 p-0 bg-secondary">
         <div class="container py-lg-5">
           <div class="text-center">
             <h5 class="sub-heading">Our Services</h5>
@@ -257,7 +254,7 @@
             </h3>
 
             <!-- home services cards -->
-            <div class="py-5 bg-body-tertiary">
+            <div class="py-5">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                   <div class="card shadow-sm h-100">
@@ -523,77 +520,50 @@
       </div>
       <!-- /home page end section  -->
       <!-- FOOTER -->
-      <footer class="border-top bg-primary">
-        <div class="container py-5">
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-around"
-          >
-            <div class="col mb-3">
-              <a
-                href="/"
-                class="d-flex align-items-center justify-content-center mb-3 link-body-emphasis text-decoration-none"
-              >
-                <img
-                  src="public/images/icons/caravel-logo.png"
-                  alt="Caravel Logo in footer"
-                />
-              </a>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="public/images/icons/caravel-logo.png"
+                alt="Caravel Logo"
+                style="height: 100px"
+              />
+              <p class="mt-3 small">Caravel Systems Inc &copy; 2025</p>
             </div>
-
-            <div class="col py-3">
-              <h5 class="text-center footer-text">Pages</h5>
-              <ul class="nav flex-column text-center">
-                <li class="nav-item mb-2">
-                  <a href="/" class="nav-link p-0 footer-links footer-text"
-                    >Home</a
-                  >
+            <div class="col-md-3">
+              <h5 class="text-white">Pages</h5>
+              <ul class="list-unstyled small">
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Home</a>
                 </li>
-                <li class="nav-item mb-2">
+                <li>
                   <a
-                    href="/services.html"
-                    class="nav-link p-0 footer-links footer-text"
+                    href="services.html"
+                    class="text-white text-decoration-none"
                     >Services</a
                   >
                 </li>
-                <li class="nav-item mb-2">
-                  <a
-                    href="/about.html"
-                    class="nav-link p-0 footer-links footer-text"
+                <li>
+                  <a href="about.html" class="text-white text-decoration-none"
                     >About</a
                   >
                 </li>
-                <li class="nav-item mb-2">
-                  <a
-                    href="/contact.html"
-                    class="nav-link p-0 footer-links footer-text"
+                <li>
+                  <a href="contact.html" class="text-white text-decoration-none"
                     >Contact</a
                   >
                 </li>
               </ul>
             </div>
-            <div
-              class="col mb-3 d-flex justify-content-center align-items-center"
-            >
-              <div>
-                <h5 class="footer-text fw-bold display-6">
-                  Caravel Systems Inc
-                </h5>
-                <ul class="nav flex-column footer-text">
-                  <p class="lead">
-                    2nd Floor, North 1st Street <br />
-                    San Jose, CA 95131
-                  </p>
-                  <p class="lead">
-                    <strong>Phone:</strong> +1 (510) 292-7988 <br />
-                    <strong>Email:</strong> sales@caravelsystems.com
-                  </p>
-                </ul>
-              </div>
+            <div class="col-md-3">
+              <h5 class="text-white">Caravel Systems Inc</h5>
+              <p class="small">
+                2nd Floor, North 1st Street<br />San Jose, CA 95131<br />Phone:
+                +1 (510) 292-7988<br />Email: sales@caravelsystems.com
+              </p>
             </div>
           </div>
-        </div>
-        <div class="container-fluid text-center py-3 footer-copyright bg-gradient-solid">
-          <p class="fs-5 p-0 m-0 footer-text">Caravel Systems Inc © 2025</p>
         </div>
       </footer>
     </main>
@@ -612,5 +582,13 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 800,
+        easing: "ease-in-out",
+      });
+    </script>
   </body>
 </html>

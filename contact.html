@@ -12,12 +12,12 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     />
-    <link href="styles/min.css" rel="stylesheet" />
+    <link href="styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <nav
-        class="navbar navbar-expand-lg nav-bg"
+        class="navbar navbar-expand-lg bg-gradient-solid"
         aria-label="Offcanvas navbar large"
       >
         <div class="container">
@@ -68,12 +68,10 @@
                   >
                 </li>
                 <li class="nav-item mx-lg-2">
-                  <a class="nav-link nav-link-white" href="/about.html"
-                    >ABOUT</a
-                  >
+                  <a class="nav-link nav-link-white" href="about.html">ABOUT</a>
                 </li>
                 <li class="nav-item mx-lg-2">
-                  <a class="nav-link nav-link-white" href="/services.html"
+                  <a class="nav-link nav-link-white" href="services.html"
                     >SERVICES</a
                   >
                 </li>
@@ -153,215 +151,188 @@
       </div>
       <!-- end hero -->
       <!-- pricing -->
-      <div class="container">
-        <h2 class="feature-title text-center mb-5">Our Pricing Models</h2>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Fixed Price Model</h4>
-              </div>
-              <div class="card-body">
-                <p class="lead">
-                  Ideal for
-                  <small class="text-body-secondary fw-light"
-                    >Small-duration projects with well-defined requirements and
-                    minimal scope for change.</small
-                  >
+      <section class="py-5">
+        <div class="container text-center mb-5">
+          <h2 class="fw-bold" style="color: var(--color-primary)">
+            Choose Your Plan
+          </h2>
+          <p class="text-muted">Simple pricing tailored to your mission.</p>
+        </div>
+        <div class="container">
+          <div class="row g-4 justify-content-center">
+            <!-- Basic Plan -->
+            <div class="col-md-6 col-lg-4">
+              <div class="pricing-card p-4 h-100 text-center">
+                <h2 class="fw-bold">Fixed Price Model</h2>
+                <p class="text-muted mb-4">
+                  Ideal for Small-duration projects with well-defined
+                  requirements and minimal scope for change.
                 </p>
                 <ul class="list-unstyled mt-3 mb-4 text-start">
                   <li>
-                    <strong>Scope:</strong>Suitable for projects where the
+                    <strong>Scope: </strong>Suitable for projects where the
                     specifications are fully defined, and there is no expected
                     change or deviation.
                   </li>
                   <li>
-                    <strong>Pricing:</strong>Once the scope and deliverables are
-                    agreed upon, Caravel estimates the required effort and
+                    <strong>Pricing: </strong>Once the scope and deliverables
+                    are agreed upon, Caravel estimates the required effort and
                     offers a fixed price for the project.
                   </li>
                   <li>
-                    <strong>Risk Mitigation:</strong>Caravel assumes the risk of
-                    any project overruns. If there are any unforeseen challenges
-                    or delays, the price remains unchanged.
+                    <strong>Risk Mitigation: </strong>Caravel assumes the risk
+                    of any project overruns. If there are any unforeseen
+                    challenges or delays, the price remains unchanged.
                   </li>
                   <li>
-                    <strong>Benefits:</strong>Provides clients with a clear and
+                    <strong>Benefits: </strong>Provides clients with a clear and
                     predictable budget from the outset, ensuring that costs
                     remain fixed regardless of project challenges.
                   </li>
                 </ul>
+                <a href="#" class="btn btn-primary px-4">Get Started</a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Time & Material Model</h4>
-              </div>
-              <div class="card-body">
-                <p class="lead">
-                  Ideal For<small class="text-body-secondary fw-light"
-                    >Projects with evolving requirements, ongoing updates, or
-                    prototyping.</small
-                  >
+
+            <!-- Professional Plan -->
+            <div class="col-md-6 col-lg-4">
+              <div
+                class="pricing-card p-4 h-100 text-center border-2 border-primary"
+              >
+                <h2 class="fw-bold">Time & Material Model</h2>
+                <p class="text-muted mb-4">
+                  Ideal For Projects with evolving requirements, ongoing
+                  updates, or prototyping.
                 </p>
                 <ul class="list-unstyled mt-3 mb-4 text-start">
                   <li>
-                    <strong>Scope:</strong>Perfect for projects with evolving
+                    <strong>Scope: </strong>Perfect for projects with evolving
                     specifications, where continuous updates or iterative
                     development is necessary (e.g., software that requires
                     ongoing maintenance or prototyping).
                   </li>
                   <li>
-                    <strong>Pricing:</strong>: The client and Caravel agree on a
-                    man-hour or man-month rate at the start. Resources are
+                    <strong>Pricing: </strong>: The client and Caravel agree on
+                    a man-hour or man-month rate at the start. Resources are
                     allocated as needed across various phases of the project.
                   </li>
                   <li>
-                    <strong>Flexibility:</strong>: Resources can be ramped up or
-                    down based on the project’s progress, providing flexibility
-                    as the project evolves.
+                    <strong>Flexibility: </strong>: Resources can be ramped up
+                    or down based on the project’s progress, providing
+                    flexibility as the project evolves.
                   </li>
                   <li>
-                    <strong>Project Management:</strong>A dedicated Caravel
+                    <strong>Project Management: </strong>A dedicated Caravel
                     project manager (or the client’s own project manager)
                     oversees the project, ensuring it remains on track and
                     within scope.
                   </li>
                   <li>
-                    <strong>Benefits:</strong>: Ideal for clients seeking
+                    <strong>Benefits: </strong>: Ideal for clients seeking
                     flexibility and cost reduction, as they only pay for the
                     resources they use, while Caravel manages the scalability of
                     the team to meet project demands.
                   </li>
                 </ul>
+                <a href="#" class="btn btn-primary px-4">Start Trial</a>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-              <div class="card-header py-3 text-bg-primary border-primary">
-                <h4 class="my-0 fw-normal">Cost Plus Model</h4>
-              </div>
-              <div class="card-body">
-                <p class="lead">
-                  Ideal For<small class="text-body-secondary fw-light">
-                    Clients looking to set up a Dedicated Overseas Development
-                    Center (ODC) for long-term projects or large-scale
-                    system/product development.</small
-                  >
+
+            <!-- Enterprise Plan -->
+            <div class="col-md-6 col-lg-4">
+              <div class="pricing-card p-4 h-100 text-center">
+                <h2 class="fw-bold">Cost Plus Model</h2>
+                <p class="text-muted mb-4">
+                  Ideal For Clients looking to set up a Dedicated Overseas
+                  Development Center (ODC) for long-term projects or large-scale
+                  system/product development.
                 </p>
                 <ul class="list-unstyled mt-3 mb-4 text-start">
                   <li>
-                    <strong>Scope:</strong>This model is best suited for clients
-                    with long-term development needs, such as building a
+                    <strong>Scope: </strong>This model is best suited for
+                    clients with long-term development needs, such as building a
                     complete system/product with ongoing maintenance or
                     releasing new versions continuously.
                   </li>
                   <li>
-                    <strong>Customization:</strong>: The client identifies their
-                    requirements for technical resources, space, and
+                    <strong>Customization: </strong>: The client identifies
+                    their requirements for technical resources, space, and
                     infrastructure. Caravel provides the necessary setup,
                     including the selection of technical resources as per the
                     client’s criteria.
                   </li>
                   <li>
-                    <strong>Cost Structure:</strong>: Caravel charges a
+                    <strong>Cost Structure: </strong>: Caravel charges a
                     percentage-based overhead for the management of operations,
                     which includes costs for technical resources,
                     infrastructure, equipment depreciation, and other overheads.
                   </li>
                   <li>
-                    <strong>Dedicated Management Management:</strong>A dedicated
-                    project manager ensures smooth management of operations at
-                    the ODC. The client has direct involvement in selecting
-                    resources.
+                    <strong>Dedicated Management Management: </strong>A
+                    dedicated project manager ensures smooth management of
+                    operations at the ODC. The client has direct involvement in
+                    selecting resources.
                   </li>
                   <li>
-                    <strong>Benefits:</strong>: This model offers significant
+                    <strong>Benefits: </strong>: This model offers significant
                     cost reduction over time and provides the flexibility of a
                     dedicated team with scalable operations. It’s ideal for
                     clients wishing to reduce operational costs by transferring
                     their IT development and maintenance overseas.
                   </li>
                 </ul>
+                <a href="#" class="btn btn-primary px-4">Contact Sales</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- pricing -->
       <!-- FOOTER -->
-      <footer class="border-top bg-gradient-solid">
-        <div class="container py-5">
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-around"
-          >
-            <div class="col mb-3">
-              <a
-                href="/"
-                class="d-flex align-items-center justify-content-center mb-3 link-body-emphasis text-decoration-none"
-              >
-                <img
-                  src="public/images/icons/caravel-logo.png"
-                  alt="Caravel Logo in footer"
-                />
-              </a>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="public/images/icons/caravel-logo.png"
+                alt="Caravel Logo"
+                style="height: 100px"
+              />
+              <p class="mt-3 small">Caravel Systems Inc &copy; 2025</p>
             </div>
-
-            <div class="col py-3">
-              <h5 class="text-center footer-text">Pages</h5>
-              <ul class="nav flex-column text-center">
-                <li class="nav-item mb-2">
-                  <a href="/" class="nav-link p-0 footer-links footer-text"
-                    >Home</a
-                  >
+            <div class="col-md-3">
+              <h5 class="text-white">Pages</h5>
+              <ul class="list-unstyled small">
+                <li>
+                  <a href="/" class="text-white text-decoration-none">Home</a>
                 </li>
-                <li class="nav-item mb-2">
+                <li>
                   <a
-                    href="/services.html"
-                    class="nav-link p-0 footer-links footer-text"
+                    href="services.html"
+                    class="text-white text-decoration-none"
                     >Services</a
                   >
                 </li>
-                <li class="nav-item mb-2">
-                  <a
-                    href="/about.html"
-                    class="nav-link p-0 footer-links footer-text"
+                <li>
+                  <a href="about.html" class="text-white text-decoration-none"
                     >About</a
                   >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links footer-text"
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
                     >Contact</a
                   >
                 </li>
               </ul>
             </div>
-            <div
-              class="col mb-3 d-flex justify-content-center align-items-center"
-            >
-              <div>
-                <h5 class="footer-text fw-bold display-6">
-                  Caravel Systems Inc
-                </h5>
-                <ul class="nav flex-column footer-text">
-                  <p class="lead">
-                    2nd Floor, North 1st Street <br />
-                    San Jose, CA 95131
-                  </p>
-                  <p class="lead">
-                    <strong>Phone:</strong> +1 (510) 292-7988 <br />
-                    <strong>Email:</strong> sales@caravelsystems.com
-                  </p>
-                </ul>
-              </div>
+            <div class="col-md-3">
+              <h5 class="text-white">Caravel Systems Inc</h5>
+              <p class="small">
+                2nd Floor, North 1st Street<br />San Jose, CA 95131<br />Phone:
+                +1 (510) 292-7988<br />Email: sales@caravelsystems.com
+              </p>
             </div>
           </div>
-        </div>
-        <div class="container-fluid text-center py-3 footer-copyright">
-          <p class="fs-5 p-0 m-0 footer-text">Caravel Systems Inc © 2025</p>
         </div>
       </footer>
     </main>

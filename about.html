@@ -13,17 +13,18 @@
       crossorigin="anonymous"
     />
     <link href="/styles/index.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="sticky-top">
       <nav
-        class="navbar navbar-expand-lg nav-bg"
+        class="navbar navbar-expand-lg bg-gradient-solid"
         aria-label="Offcanvas navbar large"
       >
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img
-              src="/public/images/icons/caravel-logo.png"
+              src="public/images/icons/caravel-logo.png"
               alt="Caravel Systems Inc logo"
               height="50px"
               width="50px"
@@ -70,13 +71,13 @@
                 <li class="nav-item mx-lg-2">
                   <a class="nav-link active nav-link-white" href="#">ABOUT</a>
                 </li>
-                <li class="nav-item mx-lg-2">
-                  <a class="nav-link nav-link-white" href="/services.html"
+                <li class="nav-item mx-lg-2 active">
+                  <a class="nav-link nav-link-white" href="services.html"
                     >SERVICES</a
                   >
                 </li>
-                <li class="nav-item mx-lg-2">
-                  <a class="nav-link nav-link-white" href="/contact.html"
+                <li class="nav-item mx-lg-2 active">
+                  <a class="nav-link nav-link-white" href="contact.html"
                     >CONTACT</a
                   >
                 </li>
@@ -117,293 +118,242 @@
       </nav>
     </header>
     <main>
-      <!-- hero -->
-      <div class="container-fluid m-0 p-0 bg-gradient-solid-to-bottom about">
-        <div class="container col-xxl-8 px-4 py-5">
-          <div class="row flex-lg-row-reverse align-items-center">
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img
-                src="public/images/ai-tech.jpg"
-                class="d-block mx-lg-auto img-fluid rounded-4 about-img-responsive mb-5 mb-lg-0"
-                alt="Predicts About Caravel Systems Inc"
-                loading="lazy"
-              />
-            </div>
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold lh-1 mb-3 section-heading">About Caravel Systems Inc</h1>
-              <p class="lead">
-                headquartered in San Jose, California, is at the forefront of
-                providing innovative hardware and embedded software solutions,
-                with a specialized focus on defense applications.
-              </p>
-              <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end hero -->
-      <!-- vision -->
-      <div class="container my-5 vision">
-        <div
-          class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
-        >
-          <div class="col-lg-6 p-lg-5 pt-lg-3">
-            <h4 class="sub-heading">Our Vision</h4>
-            <h1 class="display-5 fw-bold lh-1 section-heading">
-              Engineering Excellence, from Idea to Impact
-            </h1>
-            <p class="lead">
-              We at Caravel Systems Inc, offer a comprehensive suite of
-              end-to-end product realization services, covering everything from
-              hardware design and embedded software development to application
-              software solutions. This integrated approach ensures that Caravel
-              delivers high-quality, reliable, and efficient products tailored
-              to meet the dynamic and complex needs of its customers, including
-              those in the defense sector.
+      <div class="container p-lg-5 p-sm-2">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="section-heading">Caravel Systems Inc</h2>
+            <p class="mt-3">
+              Headquartered in San Jose, California, Caravel Systems Inc is at
+              the forefront of providing innovative hardware and embedded
+              software solutions, with a specialized focus on defense
+              applications.
             </p>
-            <!-- <div
-              class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
-            >
-              <button
-                type="button"
-                class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-              >
-                Primary
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
-              >
-                Default
-              </button>
-            </div> -->
           </div>
-          <div class="col-lg-5 p-0 overflow-hidden shadow-lg rounded-4 about-img-responsive mb-5 mb-lg-0">
-            <img
-              class="rounded-lg-3"
-              src="public/images/about-hero.jpg"
-              alt=""
-              width="720"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- vision end -->
-      <!-- team -->
-      <div class="container-fluid p-0 m-0 bg-gradient-solid-to-bottom team">
-        <div class="container col-xxl-8 px-4 py-5">
-          <div class="row align-items-center py-sm-5">
-            <div class="col-10 col-sm-8 col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="img-container">
               <img
-                src="public/images/team.jpg"
-                class="d-block img-fluid rounded-4 about-img-responsive"
-                alt="Caravel Systems Inc Team"
-                loading="lazy"
+                src="public/images/about-main.jpg"
+                alt="Technology graphic"
               />
             </div>
-            <div class="col-lg-6">
-              <h4 class="sub-heading-white">Our Team</h4>
-              <h1 class="display-5 fw-bold lh-1 mb-3 section-heading">
-                The minds behind the mission, powering every breakthrough.
-              </h1>
-              <p class="lead">
-                Founded by a team of highly qualified professionals with
-                advanced degrees from renowned Indian institutions like the IITs
-                and IISc, Caravel has been a trusted partner in the technology
-                sector for over two decades. Their state-of-the-art development
-                facility in Bangalore, India, is equipped with the latest tools
-                and technologies to manage complex projects. Caravel serves a
-                diverse range of Indian defense organizations, including ADE,
-                DRDO, BEL, and ANURAG, ensuring the highest standards of
-                quality, innovation, and reliability.
-              </p>
-              <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-              </div> -->
-            </div>
           </div>
         </div>
-      </div>
-      <!-- team end -->
-      <!-- about features -->
-      <div class="container px-4 py-5" id="featured-3">
-        <h4 class="pb-2 fw-bold display-5 section-heading text-center">
-          A Trusted Partner in Defense Innovation
-        </h4>
-        <h3 class="text-center">
-          Caravel’s portfolio includes a wide range of sophisticated solutions
-          such as:
-        </h3>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="about-feature col text-center">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center"
-            >
-              <img src="public/images/icons/technical-support.png" />
-            </div>
-            <h4 class="text-body-emphasis">DSP-based Embedded Software</h4>
-            <p>for complex signal processing in defense systems</p>
-          </div>
-          <div class="about-feature col text-center">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center"
-            >
-              <img src="public/images/icons/tech.png" />
-            </div>
-            <h4 class="text-body-emphasis">UAV Controllers</h4>
-            <p>for advanced aeronautical defense applications.</p>
-          </div>
-          <div class="about-feature col text-center">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center"
-            >
-              <img src="public/images/icons/technology.png" />
-            </div>
-            <h4 class="text-body-emphasis">PCM Encoders and Decoders</h4>
-            <p>for missile systems.</p>
-          </div>
-          <div class="about-feature col text-center">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center"
-            >
-              <img src="public/images/icons/processor.png" />
-            </div>
-            <h4 class="text-body-emphasis">Data Acquisition Cards</h4>
-            <p>for airborne system instrumentation.</p>
-          </div>
-          <div class="about-feature col text-center">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center"
-            >
-              <img src="public/images/icons/data-management.png" />
-            </div>
-            <h4 class="text-body-emphasis">Network Gateway Systems</h4>
-            <p>for robust cybersecurity in defense organizations.</p>
-          </div>
-          <div class="about-feature col text-center">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center"
-            >
-              <img src="public/images/icons/transformation.png" />
-            </div>
-            <h4 class="text-body-emphasis">High-Speed FPGA Designs</h4>
-            <p>for real-time defense surveillance.</p>
-          </div>
-          <div class="about-feature col text-center">
-            <div
-              class="feature-icon d-inline-flex align-items-center justify-content-center"
-            >
-              <img src="public/images/icons/cpu.png" />
-            </div>
-            <h4 class="text-body-emphasis">
-              Video Annotation and Time Stamping
-            </h4>
-            <p>for ground communication systems in military operations.</p>
-          </div>
-        </div>
-      </div>
-      <!-- about features end  -->
-      <!-- about ender -->
-      <div class="px-4 pt-5 my-5 text-center border-bottom border-top">
-        <h1 class="display-5 fw-bold text-body-emphasis section-heading">
-          At the Frontline of Defense Tech Evolution
-        </h1>
-        <div class="col-lg-8 mx-auto">
-          <p class="lead mb-4 fw-bold">
-            By consistently delivering cutting-edge solutions, Caravel has
-            established itself as a trusted partner for defense organizations,
-            meeting the evolving needs of the sector and contributing to India’s
-            defense technology advancements.
-          </p>
-        </div>
-        <div class="overflow-hidden" style="max-height: 40vh">
-          <div class="container px-5">
-            <img
-              src="public/images/about-bottom.jpg"
-              class="img-fluid border rounded-3 shadow-lg mb-4"
-              alt="Caravel Defense Tech"
-              width="700"
-              height="500"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </div>
-      <!-- /about ender -->
-      <!-- FOOTER -->
-      <footer class="border-top bg-gradient-solid">
-        <div class="container py-5">
-          <div
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-around"
-          >
-            <div class="col mb-3">
-              <a
-                href="/"
-                class="d-flex align-items-center justify-content-center mb-3 link-body-emphasis text-decoration-none"
-              >
-                <img
-                  src="public/images/icons/caravel-logo.png"
-                  alt="Caravel Logo in footer"
-                />
-              </a>
-            </div>
 
-            <div class="col py-3">
-              <h5 class="text-center footer-text">Pages</h5>
-              <ul class="nav flex-column text-center">
-                <li class="nav-item mb-2">
-                  <a href="/" class="nav-link p-0 footer-links footer-text"
-                    >Home</a
-                  >
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+            <h2 class="section-heading">
+              Engineering Excellence, from Idea to Impact
+            </h2>
+            <p class="mt-3">
+              At Caravel, we offer a comprehensive suite of end-to-end product
+              realization services, covering everything from hardware design and
+              embedded software to application software. Our integrated approach
+              ensures high-quality, reliable, and efficient solutions for the
+              defense sector.
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+            <div class="img-container">
+              <img
+                src="public/images/about-sec-1.jpg"
+                alt="Technology interaction"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-left">
+            <h2 class="section-heading">The minds behind the mission</h2>
+            <p class="mt-3">
+              Founded by a team of highly qualified professionals with degrees
+              from institutions like the IITs and IISc, Caravel has served the
+              defense tech sector for over two decades. Our facility in
+              Bangalore is equipped to manage complex projects with the highest
+              standards of quality, innovation, and reliability.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="img-container">
+              <img src="public/images/about-sec-2.jpg" alt="Team graphic" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 px-3 mb-5 container-fluid bg-secondary">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="section-heading">
+              A Trusted Partner in Defense Innovation
+            </h2>
+            <p class="lead text-muted">
+              Explore our diverse capabilities delivering next-gen defense
+              technologies.
+            </p>
+          </div>
+          <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <div class="card h-100 border rounded">
+                <div
+                  class="d-flex justify-content-center align-items-center about-icon-container"
+                >
+                  <img src="public/images/icons/dsp.png" alt="DSP Icon" />
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-semibold">DSP Embedded Software</h6>
+                  <p class="small text-muted">
+                    Signal processing for defense systems
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <div class="card border rounded h-100">
+                <div
+                  class="d-flex justify-content-center align-items-center about-icon-container"
+                >
+                  <img src="public/images/icons/uav-c.png" alt="UAV Icon" />
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-semibold">UAV Controllers</h6>
+                  <p class="small text-muted">
+                    Advanced aeronautical solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <div class="card border rounded h-100">
+                <div
+                  class="d-flex justify-content-center align-items-center about-icon-container"
+                >
+                  <img src="public/images/icons/pcm.png" alt="UAV Icon" />
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-semibold">PCM Encoders</h6>
+                  <p class="small text-muted">
+                    Reliable missile system interfaces
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <div class="card border rounded h-100">
+                <div
+                  class="d-flex justify-content-center align-items-center about-icon-container"
+                >
+                  <img src="public/images/icons/da.png" alt="UAV Icon" />
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-semibold">Data Acquisition</h6>
+                  <p class="small text-muted">
+                    Instrumentation for airborne systems
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <div class="card border rounded h-100">
+                <div
+                  class="d-flex justify-content-center align-items-center about-icon-container"
+                >
+                  <img src="public/images/icons/gsni.png" alt="UAV Icon" />
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-semibold">Gateway Systems</h6>
+                  <p class="small text-muted">Secure network infrastructures</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <div class="card border rounded h-100">
+                <div
+                  class="d-flex justify-content-center align-items-center about-icon-container"
+                >
+                  <img src="public/images/icons/fpgars.png" alt="UAV Icon" />
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-semibold">FPGA Designs</h6>
+                  <p class="small text-muted">Real-time surveillance systems</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 text-center">
+              <div class="card border rounded h-100">
+                <div
+                  class="d-flex justify-content-center align-items-center about-icon-container"
+                >
+                  <img src="public/images/icons/timestamp.png" alt="UAV Icon" />
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-semibold">Time Stamping</h6>
+                  <p class="small text-muted">Visual comms in military ops</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="section-heading">
+              At the Frontline of Defense Tech Evolution
+            </h2>
+            <p class="mt-3">
+              Caravel is a trusted partner to defense organizations, meeting
+              evolving tech needs while contributing to India's advancements in
+              defense technology.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="img-container">
+              <img src="public/images/about-sec-3.png" alt="Chipset graphic" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="public/images/icons/caravel-logo.png"
+                alt="Caravel Logo"
+                style="height: 100px"
+              />
+              <p class="mt-3 small">Caravel Systems Inc &copy; 2025</p>
+            </div>
+            <div class="col-md-3">
+              <h5 class="text-white">Pages</h5>
+              <ul class="list-unstyled small">
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Home</a>
                 </li>
-                <li class="nav-item mb-2">
-                  <a
-                    href="/services.html"
-                    class="nav-link p-0 footer-links footer-text"
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
                     >Services</a
                   >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 footer-links footer-text"
-                    >About</a
-                  >
+                <li>
+                  <a href="#" class="text-white text-decoration-none">About</a>
                 </li>
-                <li class="nav-item mb-2">
-                  <a
-                    href="/contact.html"
-                    class="nav-link p-0 footer-links footer-text"
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
                     >Contact</a
                   >
                 </li>
               </ul>
             </div>
-            <div
-              class="col mb-3 d-flex justify-content-center align-items-center"
-            >
-              <div>
-                <h5 class="footer-text fw-bold display-6">
-                  Caravel Systems Inc
-                </h5>
-                <ul class="nav flex-column footer-text">
-                  <p class="lead">
-                    2nd Floor, North 1st Street <br />
-                    San Jose, CA 95131
-                  </p>
-                  <p class="lead">
-                    <strong>Phone:</strong> +1 (510) 292-7988 <br />
-                    <strong>Email:</strong> sales@caravelsystems.com
-                  </p>
-                </ul>
-              </div>
+            <div class="col-md-3">
+              <h5 class="text-white">Caravel Systems Inc</h5>
+              <p class="small">
+                2nd Floor, North 1st Street<br />San Jose, CA 95131<br />Phone:
+                +1 (510) 292-7988<br />Email: sales@caravelsystems.com
+              </p>
             </div>
           </div>
-        </div>
-        <div class="container-fluid text-center py-3 footer-copyright">
-          <p class="fs-5 p-0 m-0 footer-text">Caravel Systems Inc © 2025</p>
         </div>
       </footer>
     </main>
@@ -423,4 +373,12 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"
   ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: "ease-in-out",
+    });
+  </script>
 </html>

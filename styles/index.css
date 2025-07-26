@@ -3,27 +3,26 @@
 
 /* === Theme Variables === */
 :root {
-  --color-primary: #816CD1;
-  --color-primary-hover: #6C58C1;
-  --color-secondary: #C1B5F7;
-  --color-secondary-hover: #B2A6EE;
-  --color-accent: #EDE9FC;
+  --color-primary: #816cd1;
+  --color-primary-hover: #6c58c1;
+  --color-secondary: #c1b5f7;
+  --color-secondary-hover: #b2a6ee;
+  --color-accent: #ede9fc;
 
-  --color-bg-light: #F8F7FE;
-  --color-bg-dark: #2F2A55;
+  --color-bg-light: #f8f7fe;
+  --color-bg-dark: #2f2a55;
 
-  --color-text-dark: #1E1B3A;
+  --color-text-dark: #1e1b3a;
   --color-text-light: #ffffff;
 
-  --font-heading: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
 }
-
 
 /* === Global Styles === */
 body {
   font-family: var(--font-body);
-  background-color: var(--color-bg-light);
+  /* background-color: var(--color-bg-light); */
   color: var(--color-text-dark);
   margin: 0;
   padding: 0;
@@ -108,6 +107,9 @@ p {
   padding: 1rem 2rem;
 }
 
+.font-primary {
+  color: var(--color-primary);
+}
 
 /* === Responsive Media Queries === */
 @media (max-width: 600px) {
@@ -139,7 +141,7 @@ p {
 }
 
 .bg-secondary {
-  background-color: var(--color-secondary);
+  background: linear-gradient(135deg, #f3f0ff, #f7f9ff);
 }
 
 /* Optional Dark Mode
@@ -153,16 +155,18 @@ body.dark-mode h1, body.dark-mode h2 {
 } */
 
 .bg-gradient-solid {
-  background: linear-gradient(135deg, #816CD1 0%, #C1B5F7 100%);
+  background: linear-gradient(135deg, #816cd1 0%, #c1b5f7 100%);
   color: white;
 }
-
 
 .bg-gradient-transparent {
-  background: linear-gradient(135deg, rgba(129, 108, 209, 0.5), rgba(193, 181, 247, 0.5));
+  background: linear-gradient(
+    135deg,
+    rgba(129, 108, 209, 0.5),
+    rgba(193, 181, 247, 0.5)
+  );
   color: white;
 }
-
 
 /* .btn-bg-gradient-solid {
     background: #f92997;
@@ -252,10 +256,6 @@ body.dark-mode h1, body.dark-mode h2 {
   height: 64px;
 }
 
-
-.footer-copyright {
-  background-color: var(--primary-purple-dark);
-}
 main {
   width: 100%;
   height: 100vh;
@@ -339,11 +339,43 @@ main {
 .about-secondary-img {
   height: 80vh;
 }
-.about-secondary-img img {
-  object-fit: cover;
+
+.section-heading {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
 }
-.services {
-  background-color: var(--light-gray);
+
+.about-icon-container {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.about-icon-container img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+}
+
+.img-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.services-hero-box-shadow {
+  box-shadow: inset 0 4px 12px rgba(129, 108, 209, 0.15);
+}
+
+.services-hero-text {
+  color: var(--color-secondary);
 }
 .home-ender {
   background-image: url(../public/images/gray-abstract-bg.jpg);
@@ -377,9 +409,6 @@ main {
 .about-feature img {
   height: 100px;
   width: 100%;
-}
-.footer-links {
-  color: #fff;
 }
 @media (min-width: 40em) {
   .carousel-caption p {
@@ -530,9 +559,28 @@ main {
   display: inline-flex;
   animation: bounceDown 1.5s infinite;
 }
-.footer-text {
-  color: #fff;
+
+/* footer */
+
+footer {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: var(--color-text-light);
+  padding: 3rem 1rem;
 }
+
+footer a {
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 @keyframes bounceDown {
   0%,
   20%,
@@ -570,6 +618,26 @@ main {
     rgb(218 50 168) 50%,
     rgb(165 61 194) 100%
   );
+}
+
+.pricing-card {
+  border: 1px solid #e0ddf0;
+  border-radius: 1rem;
+  transition: box-shadow 0.3s ease;
+  background: white;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 10px 20px rgba(129, 108, 209, 0.15);
+}
+
+.pricing-card .btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.pricing-card .btn-primary:hover {
+  background-color: #6f5bc7;
 }
 @media (max-width: 768px) {
   .prod-des-sect-title {
